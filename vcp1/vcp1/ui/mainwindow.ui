@@ -255,7 +255,7 @@ font: 14pt &quot;DejaVu Sans&quot;; }
              <enum>QTabWidget::Triangular</enum>
             </property>
             <property name="currentIndex">
-             <number>1</number>
+             <number>3</number>
             </property>
             <property name="movable">
              <bool>true</bool>
@@ -1432,7 +1432,7 @@ font: 14pt &quot;DejaVu Sans&quot;;
                  <item row="9" column="5">
                   <widget class="QPushButton" name="mdiClearButton">
                    <property name="text">
-                    <string>CLEAR</string>
+                    <string>CLR</string>
                    </property>
                   </widget>
                  </item>
@@ -1444,13 +1444,6 @@ font: 14pt &quot;DejaVu Sans&quot;;
                    <attribute name="buttonGroup">
                     <string notr="true">mdiButtonGroup</string>
                    </attribute>
-                  </widget>
-                 </item>
-                 <item row="10" column="5">
-                  <widget class="QPushButton" name="mdiEnterButton">
-                   <property name="text">
-                    <string>ENTER</string>
-                   </property>
                   </widget>
                  </item>
                  <item row="7" column="4">
@@ -1534,13 +1527,6 @@ font: 14pt &quot;DejaVu Sans&quot;;
                    <attribute name="buttonGroup">
                     <string notr="true">mdiButtonGroup</string>
                    </attribute>
-                  </widget>
-                 </item>
-                 <item row="10" column="6">
-                  <widget class="QPushButton" name="mdiBackSpaceKey">
-                   <property name="text">
-                    <string>BKSP</string>
-                   </property>
                   </widget>
                  </item>
                  <item row="4" column="6">
@@ -1798,6 +1784,20 @@ font: 14pt &quot;DejaVu Sans&quot;;
                    <attribute name="buttonGroup">
                     <string notr="true">mdiButtonGroup</string>
                    </attribute>
+                  </widget>
+                 </item>
+                 <item row="10" column="5">
+                  <widget class="QPushButton" name="mdiBackSpaceKey">
+                   <property name="text">
+                    <string>BKSP</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="10" column="6">
+                  <widget class="QPushButton" name="mdiEnterButton">
+                   <property name="text">
+                    <string>ENT</string>
+                   </property>
                   </widget>
                  </item>
                 </layout>
@@ -2593,6 +2593,9 @@ background-color:rgb(52, 101, 164);</string>
                       <property name="frameShape">
                        <enum>QFrame::Box</enum>
                       </property>
+                      <property name="lineWidth">
+                       <number>2</number>
+                      </property>
                       <property name="rules" stdset="0">
                        <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:current_vel&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'FEED ' + str(ch[0]*60) + '  IPM'&quot;, &quot;name&quot;: &quot;jog speed&quot;}]</string>
                       </property>
@@ -2684,6 +2687,9 @@ background-color:rgb(52, 101, 164);</string>
                       <property name="frameShape">
                        <enum>QFrame::Box</enum>
                       </property>
+                      <property name="lineWidth">
+                       <number>2</number>
+                      </property>
                       <property name="text">
                        <string>COOLANT</string>
                       </property>
@@ -2723,7 +2729,7 @@ font: 14pt &quot;DejaVu Sans&quot;; }
              <enum>QTabWidget::Triangular</enum>
             </property>
             <property name="currentIndex">
-             <number>3</number>
+             <number>2</number>
             </property>
             <property name="documentMode">
              <bool>false</bool>
@@ -3497,7 +3503,7 @@ X</string>
                 <x>0</x>
                 <y>350</y>
                 <width>391</width>
-                <height>61</height>
+                <height>101</height>
                </rect>
               </property>
               <property name="frameShape">
@@ -3534,48 +3540,153 @@ X</string>
                   <property name="bottomMargin">
                    <number>5</number>
                   </property>
-                  <item row="0" column="2">
+                  <item row="1" column="2">
                    <widget class="StatusLabel" name="statuslabel_41">
+                    <property name="frameShape">
+                     <enum>QFrame::Box</enum>
+                    </property>
                     <property name="rules" stdset="0">
                      <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:tool_table&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'{:.4f}'.format(ch[0][0].zoffset)&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
                     </property>
                    </widget>
                   </item>
-                  <item row="0" column="0">
+                  <item row="1" column="0">
                    <widget class="StatusLabel" name="statuslabel_18">
+                    <property name="frameShape">
+                     <enum>QFrame::Box</enum>
+                    </property>
                     <property name="rules" stdset="0">
                      <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:tool_table&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;str(ch[0][0].id)&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
                     </property>
                    </widget>
                   </item>
-                  <item row="0" column="4">
+                  <item row="1" column="4">
                    <widget class="StatusLabel" name="statuslabel_36">
+                    <property name="frameShape">
+                     <enum>QFrame::Box</enum>
+                    </property>
                     <property name="rules" stdset="0">
                      <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:tool_table&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'{:.4f}'.format(ch[0][0].xoffset)&quot;, &quot;name&quot;: &quot;spindle tool&quot;}]</string>
                     </property>
                    </widget>
                   </item>
-                  <item row="0" column="3">
+                  <item row="1" column="3">
                    <widget class="StatusLabel" name="statuslabel_42">
+                    <property name="frameShape">
+                     <enum>QFrame::Box</enum>
+                    </property>
                     <property name="rules" stdset="0">
                      <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:tool_table&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'{:.4f}'.format(ch[0][0].diameter)&quot;, &quot;name&quot;: &quot;spindle tool&quot;}]</string>
                     </property>
                    </widget>
                   </item>
-                  <item row="0" column="5">
+                  <item row="1" column="5">
                    <widget class="StatusLabel" name="statuslabel_43">
+                    <property name="frameShape">
+                     <enum>QFrame::Box</enum>
+                    </property>
                     <property name="rules" stdset="0">
                      <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:tool_table&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'{:.4f}'.format(ch[0][0].yoffset)&quot;, &quot;name&quot;: &quot;spindle tool&quot;}]</string>
                     </property>
                    </widget>
                   </item>
-                  <item row="0" column="1">
+                  <item row="1" column="1">
                    <widget class="StatusLabel" name="statuslabel_44">
+                    <property name="maximumSize">
+                     <size>
+                      <width>80</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::Box</enum>
+                    </property>
                     <property name="text">
                      <string>No Tool Loaded</string>
                     </property>
                     <property name="rules" stdset="0">
                      <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;tooltable:current_tool?comment&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="label_39">
+                    <property name="maximumSize">
+                     <size>
+                      <width>40</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::Box</enum>
+                    </property>
+                    <property name="text">
+                     <string>TOOL</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QLabel" name="label_40">
+                    <property name="frameShape">
+                     <enum>QFrame::Box</enum>
+                    </property>
+                    <property name="text">
+                     <string>NAME</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="2">
+                   <widget class="QLabel" name="label_41">
+                    <property name="frameShape">
+                     <enum>QFrame::Box</enum>
+                    </property>
+                    <property name="text">
+                     <string>Z OFF</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="3">
+                   <widget class="QLabel" name="label_42">
+                    <property name="frameShape">
+                     <enum>QFrame::Box</enum>
+                    </property>
+                    <property name="text">
+                     <string>D OFF</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="4">
+                   <widget class="QLabel" name="label_43">
+                    <property name="frameShape">
+                     <enum>QFrame::Box</enum>
+                    </property>
+                    <property name="text">
+                     <string>X OFF</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="5">
+                   <widget class="QLabel" name="label_44">
+                    <property name="frameShape">
+                     <enum>QFrame::Box</enum>
+                    </property>
+                    <property name="text">
+                     <string>Y OFF</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
                     </property>
                    </widget>
                   </item>
@@ -3590,6 +3701,9 @@ background-color:rgb(52, 101, 164);</string>
                  </property>
                  <property name="frameShape">
                   <enum>QFrame::Box</enum>
+                 </property>
+                 <property name="lineWidth">
+                  <number>2</number>
                  </property>
                  <property name="text">
                   <string>SPINDLE TOOL DATA</string>
