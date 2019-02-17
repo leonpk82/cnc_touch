@@ -255,7 +255,7 @@ font: 14pt &quot;DejaVu Sans&quot;; }
              <enum>QTabWidget::Triangular</enum>
             </property>
             <property name="currentIndex">
-             <number>3</number>
+             <number>1</number>
             </property>
             <property name="movable">
              <bool>true</bool>
@@ -1315,15 +1315,36 @@ background-color:rgb(52, 101, 164);</string>
                          </property>
                         </widget>
                        </item>
-                       <item row="4" column="1">
+                       <item row="4" column="2">
                         <widget class="StatusLabel" name="statuslabel_32">
+                         <property name="maximumSize">
+                          <size>
+                           <width>50</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
+                         <property name="frameShape">
+                          <enum>QFrame::Box</enum>
+                         </property>
+                         <property name="frameShadow">
+                          <enum>QFrame::Plain</enum>
+                         </property>
                          <property name="rules" stdset="0">
                           <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:state?text&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0] &quot;, &quot;name&quot;: &quot;State&quot;}]</string>
                          </property>
                         </widget>
                        </item>
-                       <item row="4" column="2">
+                       <item row="4" column="1">
                         <widget class="StatusLabel" name="statuslabel_34">
+                         <property name="maximumSize">
+                          <size>
+                           <width>90</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
+                         <property name="frameShape">
+                          <enum>QFrame::Box</enum>
+                         </property>
                          <property name="rules" stdset="0">
                           <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:task_mode?text&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;mode&quot;}]</string>
                          </property>
@@ -1357,8 +1378,8 @@ background-color:rgb(52, 101, 164);</string>
                  <string notr="true">QPushButton {
 min-height: 50px;
 min-width: 50px;
-max-height: 60px;
-max-width: 60px;
+max-height: 50px;
+max-width: 50px;
 font: 14pt &quot;DejaVu Sans&quot;;
 }</string>
                 </property>
@@ -1378,30 +1399,20 @@ font: 14pt &quot;DejaVu Sans&quot;;
                  <property name="bottomMargin">
                   <number>5</number>
                  </property>
+                 <item row="6" column="2">
+                  <widget class="QPushButton" name="pushButton_5">
+                   <property name="text">
+                    <string>M</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">mdiButtonGroup</string>
+                   </attribute>
+                  </widget>
+                 </item>
                  <item row="10" column="4">
                   <widget class="QPushButton" name="pushButton_26">
                    <property name="text">
                     <string>-</string>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">mdiButtonGroup</string>
-                   </attribute>
-                  </widget>
-                 </item>
-                 <item row="6" column="3">
-                  <widget class="QPushButton" name="pushButton_7">
-                   <property name="text">
-                    <string>I</string>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">mdiButtonGroup</string>
-                   </attribute>
-                  </widget>
-                 </item>
-                 <item row="6" column="4">
-                  <widget class="QPushButton" name="pushButton_10">
-                   <property name="text">
-                    <string>J</string>
                    </property>
                    <attribute name="buttonGroup">
                     <string notr="true">mdiButtonGroup</string>
@@ -1472,83 +1483,13 @@ font: 14pt &quot;DejaVu Sans&quot;;
                    </attribute>
                   </widget>
                  </item>
-                 <item row="7" column="5">
-                  <widget class="QPushButton" name="pushButton_17">
-                   <property name="text">
-                    <string>Q</string>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">mdiButtonGroup</string>
-                   </attribute>
-                  </widget>
-                 </item>
                  <item row="4" column="1" colspan="5">
                   <widget class="MDIEntry" name="mdiEntry"/>
-                 </item>
-                 <item row="8" column="4">
-                  <widget class="QPushButton" name="pushButton_31">
-                   <property name="text">
-                    <string>L</string>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">mdiButtonGroup</string>
-                   </attribute>
-                  </widget>
-                 </item>
-                 <item row="8" column="5">
-                  <widget class="QPushButton" name="pushButton_32">
-                   <property name="text">
-                    <string>H</string>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">mdiButtonGroup</string>
-                   </attribute>
-                  </widget>
-                 </item>
-                 <item row="6" column="5">
-                  <widget class="QPushButton" name="pushButton_9">
-                   <property name="text">
-                    <string>K</string>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">mdiButtonGroup</string>
-                   </attribute>
-                  </widget>
-                 </item>
-                 <item row="5" column="5">
-                  <widget class="QPushButton" name="pushButton_13">
-                   <property name="text">
-                    <string>S</string>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">mdiButtonGroup</string>
-                   </attribute>
-                  </widget>
-                 </item>
-                 <item row="5" column="4">
-                  <widget class="QPushButton" name="pushButton_12">
-                   <property name="text">
-                    <string>P</string>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">mdiButtonGroup</string>
-                   </attribute>
-                  </widget>
                  </item>
                  <item row="5" column="3">
                   <widget class="QPushButton" name="pushButton_8">
                    <property name="text">
                     <string>Z</string>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">mdiButtonGroup</string>
-                   </attribute>
-                  </widget>
-                 </item>
-                 <item row="9" column="6">
-                  <widget class="QPushButton" name="pushButton">
-                   <property name="text">
-                    <string>A</string>
                    </property>
                    <attribute name="buttonGroup">
                     <string notr="true">mdiButtonGroup</string>
@@ -1659,16 +1600,6 @@ font: 14pt &quot;DejaVu Sans&quot;;
                    </attribute>
                   </widget>
                  </item>
-                 <item row="6" column="2">
-                  <widget class="QPushButton" name="pushButton_5">
-                   <property name="text">
-                    <string>M</string>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">mdiButtonGroup</string>
-                   </attribute>
-                  </widget>
-                 </item>
                  <item row="8" column="2">
                   <widget class="QPushButton" name="pushButton_29">
                    <property name="text">
@@ -1733,6 +1664,136 @@ font: 14pt &quot;DejaVu Sans&quot;;
                   <widget class="QPushButton" name="pushButton_24">
                    <property name="text">
                     <string>.</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">mdiButtonGroup</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="5" column="7">
+                  <widget class="QPushButton" name="pushButton_46">
+                   <property name="text">
+                    <string>G91</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">mdiButtonGroup</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="6" column="7">
+                  <widget class="QPushButton" name="pushButton_47">
+                   <property name="text">
+                    <string>G53</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">mdiButtonGroup</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="7" column="7">
+                  <widget class="QPushButton" name="pushButton_48">
+                   <property name="text">
+                    <string>G43</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">mdiButtonGroup</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="8" column="7">
+                  <widget class="QPushButton" name="pushButton_49">
+                   <property name="text">
+                    <string>G49</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">mdiButtonGroup</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="5" column="4">
+                  <widget class="QPushButton" name="pushButton">
+                   <property name="text">
+                    <string>A</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">mdiButtonGroup</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="9" column="6">
+                  <widget class="QPushButton" name="pushButton_31">
+                   <property name="text">
+                    <string>L</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">mdiButtonGroup</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="8" column="4">
+                  <widget class="QPushButton" name="pushButton_32">
+                   <property name="text">
+                    <string>H</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">mdiButtonGroup</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="8" column="5">
+                  <widget class="QPushButton" name="pushButton_9">
+                   <property name="text">
+                    <string>K</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">mdiButtonGroup</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="7" column="5">
+                  <widget class="QPushButton" name="pushButton_10">
+                   <property name="text">
+                    <string>J</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">mdiButtonGroup</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="6" column="5">
+                  <widget class="QPushButton" name="pushButton_7">
+                   <property name="text">
+                    <string>I</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">mdiButtonGroup</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="6" column="3">
+                  <widget class="QPushButton" name="pushButton_13">
+                   <property name="text">
+                    <string>S</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">mdiButtonGroup</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="6" column="4">
+                  <widget class="QPushButton" name="pushButton_17">
+                   <property name="text">
+                    <string>Q</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">mdiButtonGroup</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="5" column="5">
+                  <widget class="QPushButton" name="pushButton_12">
+                   <property name="text">
+                    <string>P</string>
                    </property>
                    <attribute name="buttonGroup">
                     <string notr="true">mdiButtonGroup</string>
