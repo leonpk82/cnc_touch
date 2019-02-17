@@ -255,7 +255,7 @@ font: 14pt &quot;DejaVu Sans&quot;; }
              <enum>QTabWidget::Triangular</enum>
             </property>
             <property name="currentIndex">
-             <number>3</number>
+             <number>2</number>
             </property>
             <property name="movable">
              <bool>true</bool>
@@ -1399,7 +1399,7 @@ font: 14pt &quot;DejaVu Sans&quot;;
                  <property name="bottomMargin">
                   <number>5</number>
                  </property>
-                 <item row="6" column="2">
+                 <item row="7" column="2">
                   <widget class="QPushButton" name="pushButton_5">
                    <property name="text">
                     <string>M</string>
@@ -1409,7 +1409,7 @@ font: 14pt &quot;DejaVu Sans&quot;;
                    </attribute>
                   </widget>
                  </item>
-                 <item row="10" column="4">
+                 <item row="11" column="4">
                   <widget class="QPushButton" name="pushButton_26">
                    <property name="text">
                     <string>-</string>
@@ -1419,7 +1419,7 @@ font: 14pt &quot;DejaVu Sans&quot;;
                    </attribute>
                   </widget>
                  </item>
-                 <item row="8" column="3">
+                 <item row="9" column="3">
                   <widget class="QPushButton" name="pushButton_30">
                    <property name="text">
                     <string>6</string>
@@ -1429,14 +1429,14 @@ font: 14pt &quot;DejaVu Sans&quot;;
                    </attribute>
                   </widget>
                  </item>
-                 <item row="9" column="5">
+                 <item row="10" column="5">
                   <widget class="QPushButton" name="mdiClearButton">
                    <property name="text">
                     <string>CLR</string>
                    </property>
                   </widget>
                  </item>
-                 <item row="9" column="4">
+                 <item row="10" column="4">
                   <widget class="QPushButton" name="pushButton_21">
                    <property name="text">
                     <string>T</string>
@@ -1446,7 +1446,7 @@ font: 14pt &quot;DejaVu Sans&quot;;
                    </attribute>
                   </widget>
                  </item>
-                 <item row="7" column="4">
+                 <item row="8" column="4">
                   <widget class="QPushButton" name="pushButton_16">
                    <property name="text">
                     <string>D</string>
@@ -1456,7 +1456,7 @@ font: 14pt &quot;DejaVu Sans&quot;;
                    </attribute>
                   </widget>
                  </item>
-                 <item row="9" column="3">
+                 <item row="10" column="3">
                   <widget class="QPushButton" name="pushButton_20">
                    <property name="text">
                     <string>3</string>
@@ -1466,7 +1466,7 @@ font: 14pt &quot;DejaVu Sans&quot;;
                    </attribute>
                   </widget>
                  </item>
-                 <item row="7" column="3">
+                 <item row="8" column="3">
                   <widget class="QPushButton" name="pushButton_18">
                    <property name="text">
                     <string>9</string>
@@ -1479,7 +1479,7 @@ font: 14pt &quot;DejaVu Sans&quot;;
                  <item row="4" column="1" colspan="5">
                   <widget class="MDIEntry" name="mdiEntry"/>
                  </item>
-                 <item row="5" column="3">
+                 <item row="6" column="3">
                   <widget class="QPushButton" name="pushButton_8">
                    <property name="text">
                     <string>Z</string>
@@ -1489,7 +1489,7 @@ font: 14pt &quot;DejaVu Sans&quot;;
                    </attribute>
                   </widget>
                  </item>
-                 <item row="8" column="6">
+                 <item row="9" column="6">
                   <widget class="QPushButton" name="pushButton_2">
                    <property name="text">
                     <string>M3</string>
@@ -1499,7 +1499,7 @@ font: 14pt &quot;DejaVu Sans&quot;;
                    </attribute>
                   </widget>
                  </item>
-                 <item row="7" column="6">
+                 <item row="8" column="6">
                   <widget class="QPushButton" name="pushButton_22">
                    <property name="text">
                     <string>G1</string>
@@ -1509,7 +1509,7 @@ font: 14pt &quot;DejaVu Sans&quot;;
                    </attribute>
                   </widget>
                  </item>
-                 <item row="6" column="6">
+                 <item row="7" column="6">
                   <widget class="QPushButton" name="pushButton_27">
                    <property name="text">
                     <string>G0</string>
@@ -1519,7 +1519,7 @@ font: 14pt &quot;DejaVu Sans&quot;;
                    </attribute>
                   </widget>
                  </item>
-                 <item row="5" column="6">
+                 <item row="6" column="6">
                   <widget class="QPushButton" name="pushButton_33">
                    <property name="text">
                     <string>G90</string>
@@ -1536,7 +1536,7 @@ font: 14pt &quot;DejaVu Sans&quot;;
                    </property>
                   </widget>
                  </item>
-                 <item row="9" column="2">
+                 <item row="10" column="2">
                   <widget class="QPushButton" name="pushButton_19">
                    <property name="text">
                     <string>2</string>
@@ -1546,7 +1546,7 @@ font: 14pt &quot;DejaVu Sans&quot;;
                    </attribute>
                   </widget>
                  </item>
-                 <item row="7" column="1">
+                 <item row="8" column="1">
                   <widget class="QPushButton" name="pushButton_4">
                    <property name="text">
                     <string>7</string>
@@ -1556,7 +1556,7 @@ font: 14pt &quot;DejaVu Sans&quot;;
                    </attribute>
                   </widget>
                  </item>
-                 <item row="8" column="1">
+                 <item row="9" column="1">
                   <widget class="QPushButton" name="pushButton_28">
                    <property name="text">
                     <string>4</string>
@@ -1566,7 +1566,7 @@ font: 14pt &quot;DejaVu Sans&quot;;
                    </attribute>
                   </widget>
                  </item>
-                 <item row="5" column="2">
+                 <item row="6" column="2">
                   <widget class="QPushButton" name="pushButton_11">
                    <property name="text">
                     <string>Y</string>
@@ -1576,7 +1576,7 @@ font: 14pt &quot;DejaVu Sans&quot;;
                    </attribute>
                   </widget>
                  </item>
-                 <item row="7" column="2">
+                 <item row="8" column="2">
                   <widget class="QPushButton" name="pushButton_15">
                    <property name="text">
                     <string>8</string>
@@ -1586,7 +1586,7 @@ font: 14pt &quot;DejaVu Sans&quot;;
                    </attribute>
                   </widget>
                  </item>
-                 <item row="8" column="2">
+                 <item row="9" column="2">
                   <widget class="QPushButton" name="pushButton_29">
                    <property name="text">
                     <string>5</string>
@@ -1596,7 +1596,7 @@ font: 14pt &quot;DejaVu Sans&quot;;
                    </attribute>
                   </widget>
                  </item>
-                 <item row="6" column="1">
+                 <item row="7" column="1">
                   <widget class="QPushButton" name="pushButton_6">
                    <property name="text">
                     <string>G</string>
@@ -1606,7 +1606,7 @@ font: 14pt &quot;DejaVu Sans&quot;;
                    </attribute>
                   </widget>
                  </item>
-                 <item row="5" column="1">
+                 <item row="6" column="1">
                   <widget class="QPushButton" name="pushButton_3">
                    <property name="text">
                     <string>X</string>
@@ -1616,7 +1616,7 @@ font: 14pt &quot;DejaVu Sans&quot;;
                    </attribute>
                   </widget>
                  </item>
-                 <item row="9" column="1">
+                 <item row="10" column="1">
                   <widget class="QPushButton" name="pushButton_14">
                    <property name="text">
                     <string>1</string>
@@ -1626,7 +1626,7 @@ font: 14pt &quot;DejaVu Sans&quot;;
                    </attribute>
                   </widget>
                  </item>
-                 <item row="10" column="3">
+                 <item row="11" column="3">
                   <widget class="QPushButton" name="pushButton_25">
                    <property name="text">
                     <string>+</string>
@@ -1636,7 +1636,7 @@ font: 14pt &quot;DejaVu Sans&quot;;
                    </attribute>
                   </widget>
                  </item>
-                 <item row="10" column="2">
+                 <item row="11" column="2">
                   <widget class="QPushButton" name="pushButton_23">
                    <property name="text">
                     <string>0</string>
@@ -1646,7 +1646,7 @@ font: 14pt &quot;DejaVu Sans&quot;;
                    </attribute>
                   </widget>
                  </item>
-                 <item row="10" column="1">
+                 <item row="11" column="1">
                   <widget class="QPushButton" name="pushButton_24">
                    <property name="text">
                     <string>.</string>
@@ -1656,37 +1656,7 @@ font: 14pt &quot;DejaVu Sans&quot;;
                    </attribute>
                   </widget>
                  </item>
-                 <item row="5" column="7">
-                  <widget class="QPushButton" name="pushButton_46">
-                   <property name="text">
-                    <string>G91</string>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">mdiButtonGroup</string>
-                   </attribute>
-                  </widget>
-                 </item>
-                 <item row="6" column="7">
-                  <widget class="QPushButton" name="pushButton_47">
-                   <property name="text">
-                    <string>G53</string>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">mdiButtonGroup</string>
-                   </attribute>
-                  </widget>
-                 </item>
-                 <item row="7" column="7">
-                  <widget class="QPushButton" name="pushButton_48">
-                   <property name="text">
-                    <string>G43</string>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">mdiButtonGroup</string>
-                   </attribute>
-                  </widget>
-                 </item>
-                 <item row="8" column="7">
+                 <item row="9" column="7">
                   <widget class="QPushButton" name="pushButton_49">
                    <property name="text">
                     <string>G49</string>
@@ -1696,27 +1666,34 @@ font: 14pt &quot;DejaVu Sans&quot;;
                    </attribute>
                   </widget>
                  </item>
-                 <item row="5" column="4">
-                  <widget class="QPushButton" name="pushButton">
+                 <item row="11" column="6">
+                  <widget class="QPushButton" name="mdiEnterButton">
                    <property name="text">
-                    <string>A</string>
+                    <string>ENT</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="7" column="4">
+                  <widget class="QPushButton" name="pushButton_17">
+                   <property name="text">
+                    <string>Q</string>
                    </property>
                    <attribute name="buttonGroup">
                     <string notr="true">mdiButtonGroup</string>
                    </attribute>
                   </widget>
                  </item>
-                 <item row="9" column="6">
-                  <widget class="QPushButton" name="pushButton_31">
+                 <item row="8" column="7">
+                  <widget class="QPushButton" name="pushButton_48">
                    <property name="text">
-                    <string>L</string>
+                    <string>G43</string>
                    </property>
                    <attribute name="buttonGroup">
                     <string notr="true">mdiButtonGroup</string>
                    </attribute>
                   </widget>
                  </item>
-                 <item row="8" column="4">
+                 <item row="9" column="4">
                   <widget class="QPushButton" name="pushButton_32">
                    <property name="text">
                     <string>H</string>
@@ -1726,7 +1703,17 @@ font: 14pt &quot;DejaVu Sans&quot;;
                    </attribute>
                   </widget>
                  </item>
-                 <item row="8" column="5">
+                 <item row="7" column="7">
+                  <widget class="QPushButton" name="pushButton_47">
+                   <property name="text">
+                    <string>G53</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">mdiButtonGroup</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="9" column="5">
                   <widget class="QPushButton" name="pushButton_9">
                    <property name="text">
                     <string>K</string>
@@ -1736,17 +1723,71 @@ font: 14pt &quot;DejaVu Sans&quot;;
                    </attribute>
                   </widget>
                  </item>
-                 <item row="7" column="5">
-                  <widget class="QPushButton" name="pushButton_10">
+                 <item row="6" column="5">
+                  <widget class="QPushButton" name="pushButton_12">
                    <property name="text">
-                    <string>J</string>
+                    <string>P</string>
                    </property>
                    <attribute name="buttonGroup">
                     <string notr="true">mdiButtonGroup</string>
                    </attribute>
                   </widget>
                  </item>
-                 <item row="6" column="5">
+                 <item row="0" column="1" colspan="7">
+                  <widget class="QFrame" name="gridFrame">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::Box</enum>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_52">
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="label_47">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>30</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>1122222</width>
+                        <height>30</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(255, 255, 255);
+background-color:rgb(52, 101, 164);</string>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::Box</enum>
+                      </property>
+                      <property name="lineWidth">
+                       <number>2</number>
+                      </property>
+                      <property name="text">
+                       <string>MDI</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="11" column="5">
+                  <widget class="QPushButton" name="mdiBackSpaceKey">
+                   <property name="text">
+                    <string>BKSP</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="7" column="5">
                   <widget class="QPushButton" name="pushButton_7">
                    <property name="text">
                     <string>I</string>
@@ -1756,7 +1797,27 @@ font: 14pt &quot;DejaVu Sans&quot;;
                    </attribute>
                   </widget>
                  </item>
-                 <item row="6" column="3">
+                 <item row="6" column="7">
+                  <widget class="QPushButton" name="pushButton_46">
+                   <property name="text">
+                    <string>G91</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">mdiButtonGroup</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="8" column="5">
+                  <widget class="QPushButton" name="pushButton_10">
+                   <property name="text">
+                    <string>J</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">mdiButtonGroup</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="7" column="3">
                   <widget class="QPushButton" name="pushButton_13">
                    <property name="text">
                     <string>S</string>
@@ -1767,38 +1828,37 @@ font: 14pt &quot;DejaVu Sans&quot;;
                   </widget>
                  </item>
                  <item row="6" column="4">
-                  <widget class="QPushButton" name="pushButton_17">
+                  <widget class="QPushButton" name="pushButton">
                    <property name="text">
-                    <string>Q</string>
+                    <string>A</string>
                    </property>
                    <attribute name="buttonGroup">
                     <string notr="true">mdiButtonGroup</string>
                    </attribute>
-                  </widget>
-                 </item>
-                 <item row="5" column="5">
-                  <widget class="QPushButton" name="pushButton_12">
-                   <property name="text">
-                    <string>P</string>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">mdiButtonGroup</string>
-                   </attribute>
-                  </widget>
-                 </item>
-                 <item row="10" column="5">
-                  <widget class="QPushButton" name="mdiBackSpaceKey">
-                   <property name="text">
-                    <string>BKSP</string>
-                   </property>
                   </widget>
                  </item>
                  <item row="10" column="6">
-                  <widget class="QPushButton" name="mdiEnterButton">
+                  <widget class="QPushButton" name="pushButton_31">
                    <property name="text">
-                    <string>ENT</string>
+                    <string>L</string>
                    </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">mdiButtonGroup</string>
+                   </attribute>
                   </widget>
+                 </item>
+                 <item row="1" column="3">
+                  <spacer name="verticalSpacer_3">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
                  </item>
                 </layout>
                </widget>
@@ -2622,80 +2682,101 @@ background-color:rgb(52, 101, 164);</string>
                     <property name="bottomMargin">
                      <number>5</number>
                     </property>
-                    <item row="1" column="1">
-                     <widget class="MDIButton" name="FLOODON">
-                      <property name="minimumSize">
-                       <size>
-                        <width>0</width>
-                        <height>40</height>
-                       </size>
-                      </property>
-                      <property name="maximumSize">
-                       <size>
-                        <width>80</width>
-                        <height>16777215</height>
-                       </size>
-                      </property>
-                      <property name="text">
-                       <string>FLOOD ON</string>
-                      </property>
-                      <property name="rules" stdset="0">
-                       <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:flood&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;\&quot;background-color:rgb(138, 226, 52)\&quot; if ch[0]&lt;&gt;0 else ''&quot;, &quot;name&quot;: &quot;color&quot;}]</string>
-                      </property>
-                      <property name="MDICommand" stdset="0">
-                       <string>M8</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="1" column="0">
-                     <widget class="MDIButton" name="FLOODOFF">
-                      <property name="minimumSize">
-                       <size>
-                        <width>0</width>
-                        <height>40</height>
-                       </size>
-                      </property>
-                      <property name="maximumSize">
-                       <size>
-                        <width>80</width>
-                        <height>16777215</height>
-                       </size>
-                      </property>
-                      <property name="text">
-                       <string>FLOOD OFF</string>
-                      </property>
-                      <property name="rules" stdset="0">
-                       <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:flood&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;\&quot;background-color:rgb(138, 226, 52)\&quot; if ch[0]&lt;&gt;1 else\&quot; background-color:rgb(200, 0, 0)\&quot;&quot;, &quot;name&quot;: &quot;color&quot;}]</string>
-                      </property>
-                      <property name="MDICommand" stdset="0">
-                       <string>M9</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="0" column="0" colspan="2">
-                     <widget class="QLabel" name="label_36">
-                      <property name="minimumSize">
-                       <size>
-                        <width>0</width>
-                        <height>20</height>
-                       </size>
-                      </property>
-                      <property name="styleSheet">
-                       <string notr="true">color: rgb(255, 255, 255);
-background-color:rgb(52, 101, 164);</string>
-                      </property>
+                    <item row="1" column="0" colspan="2">
+                     <widget class="QFrame" name="gridFrame">
                       <property name="frameShape">
                        <enum>QFrame::Box</enum>
                       </property>
-                      <property name="lineWidth">
-                       <number>2</number>
-                      </property>
-                      <property name="text">
-                       <string>COOLANT</string>
-                      </property>
-                      <property name="alignment">
-                       <set>Qt::AlignCenter</set>
-                      </property>
+                      <layout class="QGridLayout" name="gridLayout_50">
+                       <property name="leftMargin">
+                        <number>5</number>
+                       </property>
+                       <property name="topMargin">
+                        <number>5</number>
+                       </property>
+                       <property name="rightMargin">
+                        <number>5</number>
+                       </property>
+                       <property name="bottomMargin">
+                        <number>5</number>
+                       </property>
+                       <item row="1" column="0">
+                        <widget class="MDIButton" name="FLOODOFF">
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>40</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>80</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
+                         <property name="text">
+                          <string>FLOOD OFF</string>
+                         </property>
+                         <property name="rules" stdset="0">
+                          <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:flood&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;\&quot;background-color:rgb(138, 226, 52)\&quot; if ch[0]&lt;&gt;1 else\&quot; background-color:rgb(200, 0, 0)\&quot;&quot;, &quot;name&quot;: &quot;color&quot;}]</string>
+                         </property>
+                         <property name="MDICommand" stdset="0">
+                          <string>M9</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="1">
+                        <widget class="MDIButton" name="FLOODON">
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>40</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>80</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
+                         <property name="text">
+                          <string>FLOOD ON</string>
+                         </property>
+                         <property name="rules" stdset="0">
+                          <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:flood&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;\&quot;background-color:rgb(138, 226, 52)\&quot; if ch[0]&lt;&gt;0 else ''&quot;, &quot;name&quot;: &quot;color&quot;}]</string>
+                         </property>
+                         <property name="MDICommand" stdset="0">
+                          <string>M8</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="0" colspan="2">
+                        <widget class="QLabel" name="label_36">
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>20</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">color: rgb(255, 255, 255);
+background-color:rgb(52, 101, 164);</string>
+                         </property>
+                         <property name="frameShape">
+                          <enum>QFrame::Box</enum>
+                         </property>
+                         <property name="lineWidth">
+                          <number>2</number>
+                         </property>
+                         <property name="text">
+                          <string>COOLANT</string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignCenter</set>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
                      </widget>
                     </item>
                    </layout>
@@ -2729,7 +2810,7 @@ font: 14pt &quot;DejaVu Sans&quot;; }
              <enum>QTabWidget::Triangular</enum>
             </property>
             <property name="currentIndex">
-             <number>2</number>
+             <number>0</number>
             </property>
             <property name="documentMode">
              <bool>false</bool>
@@ -3472,7 +3553,7 @@ X</string>
                     <property name="bottomMargin">
                      <number>5</number>
                     </property>
-                    <item row="0" column="0">
+                    <item row="1" column="0">
                      <widget class="StatusLabel" name="statuslabel_25">
                       <property name="maximumSize">
                        <size>
@@ -3482,6 +3563,70 @@ X</string>
                       </property>
                       <property name="rules" stdset="0">
                        <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:g5x_index&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;[\&quot;G53\&quot;,\&quot;G54\&quot;,\&quot;G55\&quot;,\&quot;G56\&quot;,\&quot;G57\&quot;,\&quot;G58\&quot;,\&quot;G59\&quot;,\&quot;G59.1\&quot;,\&quot;G59.2\&quot;,\&quot;G59.3\&quot;][ch[0]]&quot;, &quot;name&quot;: &quot;g5x index&quot;}]</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="label_46">
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(255, 255, 255);
+background-color:rgb(52, 101, 164);</string>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::Box</enum>
+                      </property>
+                      <property name="lineWidth">
+                       <number>2</number>
+                      </property>
+                      <property name="text">
+                       <string>ACTIVE</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="0" column="0" colspan="5">
+                  <widget class="QFrame" name="gridFrame">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::Box</enum>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_51">
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="label_45">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>30</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>30</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(255, 255, 255);
+background-color:rgb(52, 101, 164);</string>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::Box</enum>
+                      </property>
+                      <property name="lineWidth">
+                       <number>2</number>
+                      </property>
+                      <property name="text">
+                       <string>WORK OFFSET</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
                       </property>
                      </widget>
                     </item>
