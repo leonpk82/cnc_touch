@@ -19,5 +19,5 @@ plot
 
 dro, abs and rel are reversed in the widget rules so they read correct
 
-iwill add coolant control at some point
+Mdi panel
 
