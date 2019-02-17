@@ -1,0 +1,6 @@
+[gui_scripts]
+vcp1 = vcp1:main
+
+[qtpyvcp.vcp]
+vcp1 = vcp1
+
