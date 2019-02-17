@@ -17,8 +17,7 @@ work offset measurment
 
 plot
 
-dro
+dro, abs and rel are reversed in the widget rules so they read correct
 
 iwill add coolant control at some point
 
-and this is a giant run on sentence
