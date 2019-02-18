@@ -255,7 +255,7 @@ font: 14pt &quot;DejaVu Sans&quot;; }
              <enum>QTabWidget::Triangular</enum>
             </property>
             <property name="currentIndex">
-             <number>1</number>
+             <number>3</number>
             </property>
             <property name="movable">
              <bool>true</bool>
@@ -4778,7 +4778,7 @@ font: 14pt &quot;DejaVu Sans&quot;;
             </property>
            </widget>
           </item>
-          <item row="0" column="5">
+          <item row="0" column="6">
            <widget class="ActionButton" name="optional_stop">
             <property name="styleSheet">
              <string notr="true"/>
@@ -4834,7 +4834,7 @@ font: 14pt &quot;DejaVu Sans&quot;;
             </property>
            </widget>
           </item>
-          <item row="0" column="6">
+          <item row="0" column="7">
            <widget class="ActionButton" name="Block_delete">
             <property name="text">
              <string>BLK SKP</string>
@@ -4847,6 +4847,19 @@ font: 14pt &quot;DejaVu Sans&quot;;
             </property>
             <property name="actionName" stdset="0">
              <string>program.block-delete.toggle</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="5">
+           <widget class="ActionButton" name="floodtoggle">
+            <property name="text">
+             <string>COOL</string>
+            </property>
+            <property name="rules" stdset="0">
+             <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:flood&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;\&quot;background-color:rgb(138, 226, 52)\&quot; if ch[0]&lt;&gt;0 else ''&quot;, &quot;name&quot;: &quot;backround color&quot;}]</string>
+            </property>
+            <property name="actionName" stdset="0">
+             <string>coolant_actions.flood.toggle</string>
             </property>
            </widget>
           </item>
@@ -5022,8 +5035,8 @@ font: 14pt &quot;DejaVu Sans&quot;;
      <y>580</y>
     </hint>
     <hint type="destinationlabel">
-     <x>139</x>
-     <y>134</y>
+     <x>178</x>
+     <y>254</y>
     </hint>
    </hints>
   </connection>
@@ -5034,12 +5047,12 @@ font: 14pt &quot;DejaVu Sans&quot;;
    <slot>clear()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>385</x>
-     <y>505</y>
+     <x>335</x>
+     <y>544</y>
     </hint>
     <hint type="destinationlabel">
-     <x>139</x>
-     <y>134</y>
+     <x>178</x>
+     <y>254</y>
     </hint>
    </hints>
   </connection>
@@ -5162,12 +5175,12 @@ font: 14pt &quot;DejaVu Sans&quot;;
    <slot>clear()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>576</x>
-     <y>520</y>
+     <x>575</x>
+     <y>541</y>
     </hint>
     <hint type="destinationlabel">
-     <x>576</x>
-     <y>566</y>
+     <x>575</x>
+     <y>602</y>
     </hint>
    </hints>
   </connection>
@@ -5178,12 +5191,12 @@ font: 14pt &quot;DejaVu Sans&quot;;
    <slot>clear()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>649</x>
-     <y>588</y>
+     <x>647</x>
+     <y>602</y>
     </hint>
     <hint type="destinationlabel">
-     <x>576</x>
-     <y>566</y>
+     <x>575</x>
+     <y>602</y>
     </hint>
    </hints>
   </connection>
@@ -5194,12 +5207,12 @@ font: 14pt &quot;DejaVu Sans&quot;;
    <slot>clear()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>722</x>
-     <y>588</y>
+     <x>719</x>
+     <y>602</y>
     </hint>
     <hint type="destinationlabel">
-     <x>576</x>
-     <y>566</y>
+     <x>575</x>
+     <y>602</y>
     </hint>
    </hints>
   </connection>
@@ -5210,12 +5223,12 @@ font: 14pt &quot;DejaVu Sans&quot;;
    <slot>clear()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>795</x>
-     <y>588</y>
+     <x>791</x>
+     <y>602</y>
     </hint>
     <hint type="destinationlabel">
-     <x>576</x>
-     <y>566</y>
+     <x>575</x>
+     <y>602</y>
     </hint>
    </hints>
   </connection>
@@ -5226,12 +5239,12 @@ font: 14pt &quot;DejaVu Sans&quot;;
    <slot>clear()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>868</x>
-     <y>588</y>
+     <x>863</x>
+     <y>602</y>
     </hint>
     <hint type="destinationlabel">
-     <x>576</x>
-     <y>566</y>
+     <x>575</x>
+     <y>602</y>
     </hint>
    </hints>
   </connection>
