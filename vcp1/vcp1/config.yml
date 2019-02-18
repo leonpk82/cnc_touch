@@ -32,7 +32,7 @@ data_plugins:
     kwargs:
       # specify the columns that should be read and writen to the
       # tooltable file. To use all columns set to: TPXYZABCUVWDIJQR
-      columns: TPZDRXY
+      columns: TPXYZDR
       # specify text to be added before the tool table data
       file_header_template: |
         LinuxCNC Tool Table
