@@ -143,7 +143,7 @@ GridFrame::{ background-color: rgb(52, 101, 164);}</string>
             </property>
            </widget>
           </item>
-          <item row="1" column="5">
+          <item row="1" column="8">
            <widget class="ActionButton" name="actionbutton_17">
             <property name="text">
              <string>HOME X</string>
@@ -156,7 +156,7 @@ GridFrame::{ background-color: rgb(52, 101, 164);}</string>
             </property>
            </widget>
           </item>
-          <item row="1" column="7">
+          <item row="1" column="10">
            <widget class="ActionButton" name="actionbutton_19">
             <property name="text">
              <string>HOME Z</string>
@@ -169,7 +169,7 @@ GridFrame::{ background-color: rgb(52, 101, 164);}</string>
             </property>
            </widget>
           </item>
-          <item row="1" column="6">
+          <item row="1" column="9">
            <widget class="ActionButton" name="actionbutton_18">
             <property name="text">
              <string>HOME Y</string>
@@ -182,7 +182,7 @@ GridFrame::{ background-color: rgb(52, 101, 164);}</string>
             </property>
            </widget>
           </item>
-          <item row="1" column="8">
+          <item row="1" column="11">
            <widget class="ActionButton" name="actionbutton_20">
             <property name="text">
              <string>HOME A</string>
@@ -192,6 +192,63 @@ GridFrame::{ background-color: rgb(52, 101, 164);}</string>
             </property>
             <property name="actionName" stdset="0">
              <string>machine.home.joint:3</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="5">
+           <widget class="ActionButton" name="auto_3">
+            <property name="maximumSize">
+             <size>
+              <width>60</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>AUTO</string>
+            </property>
+            <property name="rules" stdset="0">
+             <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status: task_mode&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;\&quot;background-color:rgb(138, 226, 52)\&quot; if ch[0]==2 else ''&quot;, &quot;name&quot;: &quot;color&quot;}]</string>
+            </property>
+            <property name="actionName" stdset="0">
+             <string>machine.mode.auto</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="6">
+           <widget class="ActionButton" name="manual_2">
+            <property name="maximumSize">
+             <size>
+              <width>60</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>MAN</string>
+            </property>
+            <property name="rules" stdset="0">
+             <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:task_mode&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;\&quot;background-color:rgb(138, 226, 52)\&quot; if ch[0]==1 else ''&quot;, &quot;name&quot;: &quot;color&quot;}]</string>
+            </property>
+            <property name="actionName" stdset="0">
+             <string>machine.mode.manual</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="7">
+           <widget class="ActionButton" name="mdi_2">
+            <property name="maximumSize">
+             <size>
+              <width>60</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>MDI</string>
+            </property>
+            <property name="rules" stdset="0">
+             <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:task_mode&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;\&quot;background-color:rgb(138, 226, 52)\&quot; if ch[0]==3 else ''&quot;, &quot;name&quot;: &quot;color&quot;}]</string>
+            </property>
+            <property name="actionName" stdset="0">
+             <string>machine.mode.mdi</string>
             </property>
            </widget>
           </item>
@@ -257,7 +314,7 @@ font: 14pt &quot;DejaVu Sans&quot;; }
              <enum>QTabWidget::Triangular</enum>
             </property>
             <property name="currentIndex">
-             <number>1</number>
+             <number>3</number>
             </property>
             <property name="movable">
              <bool>true</bool>
@@ -1153,13 +1210,13 @@ background-color:rgb(52, 101, 164);</string>
                       </property>
                       <property name="minimumSize">
                        <size>
-                        <width>80</width>
+                        <width>85</width>
                         <height>140</height>
                        </size>
                       </property>
                       <property name="maximumSize">
                        <size>
-                        <width>80</width>
+                        <width>85</width>
                         <height>200</height>
                        </size>
                       </property>
@@ -1456,7 +1513,7 @@ background-color:rgb(52, 101, 164);</string>
                       </property>
                       <property name="sizeHint" stdset="0">
                        <size>
-                        <width>10</width>
+                        <width>5</width>
                         <height>20</height>
                        </size>
                       </property>
@@ -2470,6 +2527,12 @@ background-color:rgb(52, 101, 164);</string>
                     </item>
                     <item row="2" column="0">
                      <widget class="JogIncrementWidget" name="jogincrement">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>50</height>
+                       </size>
+                      </property>
                       <property name="maximumSize">
                        <size>
                         <width>380</width>
@@ -2535,12 +2598,12 @@ background-color:rgb(52, 101, 164);</string>
                        <property name="bottomMargin">
                         <number>5</number>
                        </property>
-                       <item row="4" column="2">
+                       <item row="4" column="1">
                         <widget class="ActionButton" name="actionbutton_22">
                          <property name="minimumSize">
                           <size>
                            <width>0</width>
-                           <height>40</height>
+                           <height>52</height>
                           </size>
                          </property>
                          <property name="text">
@@ -2554,12 +2617,12 @@ background-color:rgb(52, 101, 164);</string>
                          </property>
                         </widget>
                        </item>
-                       <item row="4" column="3">
+                       <item row="4" column="2">
                         <widget class="ActionButton" name="actionbutton_23">
                          <property name="minimumSize">
                           <size>
                            <width>0</width>
-                           <height>40</height>
+                           <height>52</height>
                           </size>
                          </property>
                          <property name="text">
@@ -2578,7 +2641,7 @@ background-color:rgb(52, 101, 164);</string>
                          <property name="minimumSize">
                           <size>
                            <width>0</width>
-                           <height>40</height>
+                           <height>52</height>
                           </size>
                          </property>
                          <property name="text">
@@ -2592,72 +2655,39 @@ background-color:rgb(52, 101, 164);</string>
                          </property>
                         </widget>
                        </item>
-                       <item row="2" column="0" colspan="4">
-                        <widget class="QFrame" name="gridFrame">
+                       <item row="3" column="0" colspan="3">
+                        <widget class="StatusLabel" name="statuslabel_23">
                          <property name="minimumSize">
                           <size>
-                           <width>0</width>
+                           <width>30</width>
                            <height>30</height>
                           </size>
                          </property>
                          <property name="maximumSize">
                           <size>
                            <width>16777215</width>
-                           <height>50</height>
+                           <height>30</height>
                           </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">color: rgb(255, 255, 255);
+background-color:rgb(52, 101, 164);</string>
                          </property>
                          <property name="frameShape">
                           <enum>QFrame::Box</enum>
                          </property>
-                         <layout class="QGridLayout" name="gridLayout_39">
-                          <property name="leftMargin">
-                           <number>5</number>
-                          </property>
-                          <property name="topMargin">
-                           <number>5</number>
-                          </property>
-                          <property name="rightMargin">
-                           <number>5</number>
-                          </property>
-                          <property name="bottomMargin">
-                           <number>5</number>
-                          </property>
-                          <item row="0" column="0">
-                           <widget class="StatusLabel" name="statuslabel_23">
-                            <property name="minimumSize">
-                             <size>
-                              <width>30</width>
-                              <height>30</height>
-                             </size>
-                            </property>
-                            <property name="maximumSize">
-                             <size>
-                              <width>16777215</width>
-                              <height>30</height>
-                             </size>
-                            </property>
-                            <property name="styleSheet">
-                             <string notr="true">color: rgb(255, 255, 255);
-background-color:rgb(52, 101, 164);</string>
-                            </property>
-                            <property name="frameShape">
-                             <enum>QFrame::Box</enum>
-                            </property>
-                            <property name="frameShadow">
-                             <enum>QFrame::Plain</enum>
-                            </property>
-                            <property name="lineWidth">
-                             <number>2</number>
-                            </property>
-                            <property name="alignment">
-                             <set>Qt::AlignCenter</set>
-                            </property>
-                            <property name="rules" stdset="0">
-                             <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:spindle[0].speed&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'SPINDLE RPM ' + '{:.0f}'.format(ch[0])&quot;, &quot;name&quot;: &quot;spindle speed&quot;}]</string>
-                            </property>
-                           </widget>
-                          </item>
-                         </layout>
+                         <property name="frameShadow">
+                          <enum>QFrame::Plain</enum>
+                         </property>
+                         <property name="lineWidth">
+                          <number>2</number>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignCenter</set>
+                         </property>
+                         <property name="rules" stdset="0">
+                          <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:spindle[0].speed&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'SPINDLE RPM ' + '{:.0f}'.format(ch[0])&quot;, &quot;name&quot;: &quot;spindle speed&quot;}]</string>
+                         </property>
                         </widget>
                        </item>
                       </layout>
@@ -2797,101 +2827,80 @@ background-color:rgb(52, 101, 164);</string>
                     <property name="bottomMargin">
                      <number>5</number>
                     </property>
-                    <item row="1" column="0" colspan="2">
-                     <widget class="QFrame" name="gridFrame">
+                    <item row="1" column="1">
+                     <widget class="MDIButton" name="FLOODON">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>52</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>80</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>FLOOD ON</string>
+                      </property>
+                      <property name="rules" stdset="0">
+                       <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:flood&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;\&quot;background-color:rgb(138, 226, 52)\&quot; if ch[0]&lt;&gt;0 else ''&quot;, &quot;name&quot;: &quot;color&quot;}]</string>
+                      </property>
+                      <property name="MDICommand" stdset="0">
+                       <string>M8</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="MDIButton" name="FLOODOFF">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>52</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>80</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>FLOOD OFF</string>
+                      </property>
+                      <property name="rules" stdset="0">
+                       <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:flood&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;\&quot;background-color:rgb(138, 226, 52)\&quot; if ch[0]&lt;&gt;1 else\&quot; background-color:rgb(200, 0, 0)\&quot;&quot;, &quot;name&quot;: &quot;color&quot;}]</string>
+                      </property>
+                      <property name="MDICommand" stdset="0">
+                       <string>M9</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0" colspan="2">
+                     <widget class="QLabel" name="label_36">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>25</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(255, 255, 255);
+background-color:rgb(52, 101, 164);</string>
+                      </property>
                       <property name="frameShape">
                        <enum>QFrame::Box</enum>
                       </property>
-                      <layout class="QGridLayout" name="gridLayout_50">
-                       <property name="leftMargin">
-                        <number>5</number>
-                       </property>
-                       <property name="topMargin">
-                        <number>5</number>
-                       </property>
-                       <property name="rightMargin">
-                        <number>5</number>
-                       </property>
-                       <property name="bottomMargin">
-                        <number>5</number>
-                       </property>
-                       <item row="1" column="0">
-                        <widget class="MDIButton" name="FLOODOFF">
-                         <property name="minimumSize">
-                          <size>
-                           <width>0</width>
-                           <height>40</height>
-                          </size>
-                         </property>
-                         <property name="maximumSize">
-                          <size>
-                           <width>80</width>
-                           <height>16777215</height>
-                          </size>
-                         </property>
-                         <property name="text">
-                          <string>FLOOD OFF</string>
-                         </property>
-                         <property name="rules" stdset="0">
-                          <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:flood&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;\&quot;background-color:rgb(138, 226, 52)\&quot; if ch[0]&lt;&gt;1 else\&quot; background-color:rgb(200, 0, 0)\&quot;&quot;, &quot;name&quot;: &quot;color&quot;}]</string>
-                         </property>
-                         <property name="MDICommand" stdset="0">
-                          <string>M9</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="1" column="1">
-                        <widget class="MDIButton" name="FLOODON">
-                         <property name="minimumSize">
-                          <size>
-                           <width>0</width>
-                           <height>40</height>
-                          </size>
-                         </property>
-                         <property name="maximumSize">
-                          <size>
-                           <width>80</width>
-                           <height>16777215</height>
-                          </size>
-                         </property>
-                         <property name="text">
-                          <string>FLOOD ON</string>
-                         </property>
-                         <property name="rules" stdset="0">
-                          <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:flood&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;\&quot;background-color:rgb(138, 226, 52)\&quot; if ch[0]&lt;&gt;0 else ''&quot;, &quot;name&quot;: &quot;color&quot;}]</string>
-                         </property>
-                         <property name="MDICommand" stdset="0">
-                          <string>M8</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="0" column="0" colspan="2">
-                        <widget class="QLabel" name="label_36">
-                         <property name="minimumSize">
-                          <size>
-                           <width>0</width>
-                           <height>20</height>
-                          </size>
-                         </property>
-                         <property name="styleSheet">
-                          <string notr="true">color: rgb(255, 255, 255);
-background-color:rgb(52, 101, 164);</string>
-                         </property>
-                         <property name="frameShape">
-                          <enum>QFrame::Box</enum>
-                         </property>
-                         <property name="lineWidth">
-                          <number>2</number>
-                         </property>
-                         <property name="text">
-                          <string>COOLANT</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignCenter</set>
-                         </property>
-                        </widget>
-                       </item>
-                      </layout>
+                      <property name="lineWidth">
+                       <number>2</number>
+                      </property>
+                      <property name="text">
+                       <string>COOLANT</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
                      </widget>
                     </item>
                    </layout>
@@ -2916,7 +2925,7 @@ background-color:rgb(52, 101, 164);</string>
                      <number>5</number>
                     </property>
                     <item row="1" column="3">
-                     <widget class="ActionButton" name="actionbutton_21">
+                     <widget class="ActionButton" name="mdi">
                       <property name="minimumSize">
                        <size>
                         <width>0</width>
@@ -2926,13 +2935,16 @@ background-color:rgb(52, 101, 164);</string>
                       <property name="text">
                        <string>MDI</string>
                       </property>
+                      <property name="rules" stdset="0">
+                       <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:task_mode&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;\&quot;background-color:rgb(138, 226, 52)\&quot; if ch[0]==3 else ''&quot;, &quot;name&quot;: &quot;color&quot;}]</string>
+                      </property>
                       <property name="actionName" stdset="0">
                        <string>machine.mode.mdi</string>
                       </property>
                      </widget>
                     </item>
                     <item row="1" column="1">
-                     <widget class="ActionButton" name="actionbutton_25">
+                     <widget class="ActionButton" name="auto_2">
                       <property name="minimumSize">
                        <size>
                         <width>0</width>
@@ -2942,13 +2954,16 @@ background-color:rgb(52, 101, 164);</string>
                       <property name="text">
                        <string>AUTO</string>
                       </property>
+                      <property name="rules" stdset="0">
+                       <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:task_mode&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;\&quot;background-color:rgb(138, 226, 52)\&quot; if ch[0]==2 else ''&quot;, &quot;name&quot;: &quot;color&quot;}]</string>
+                      </property>
                       <property name="actionName" stdset="0">
                        <string>machine.mode.auto</string>
                       </property>
                      </widget>
                     </item>
                     <item row="1" column="2">
-                     <widget class="ActionButton" name="jogmode">
+                     <widget class="ActionButton" name="manual">
                       <property name="minimumSize">
                        <size>
                         <width>0</width>
@@ -2958,6 +2973,9 @@ background-color:rgb(52, 101, 164);</string>
                       <property name="text">
                        <string>MANUAL</string>
                       </property>
+                      <property name="rules" stdset="0">
+                       <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:task_mode&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;\&quot;background-color:rgb(138, 226, 52)\&quot; if ch[0]==1 else ''&quot;, &quot;name&quot;: &quot;color&quot;}]</string>
+                      </property>
                       <property name="actionName" stdset="0">
                        <string>machine.mode.manual</string>
                       </property>
@@ -2965,6 +2983,12 @@ background-color:rgb(52, 101, 164);</string>
                     </item>
                     <item row="0" column="1" colspan="3">
                      <widget class="QLabel" name="label_48">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>25</height>
+                       </size>
+                      </property>
                       <property name="styleSheet">
                        <string notr="true">color: rgb(255, 255, 255);
 background-color:rgb(52, 101, 164);</string>
@@ -3011,7 +3035,7 @@ font: 14pt &quot;DejaVu Sans&quot;; }
              <enum>QTabWidget::Triangular</enum>
             </property>
             <property name="currentIndex">
-             <number>1</number>
+             <number>3</number>
             </property>
             <property name="documentMode">
              <bool>false</bool>
@@ -5548,8 +5572,8 @@ font: 14pt &quot;DejaVu Sans&quot;;
   </connection>
  </connections>
  <buttongroups>
-  <buttongroup name="mdiButtonGroup"/>
   <buttongroup name="toolOffsetGroup"/>
+  <buttongroup name="mdiButtonGroup"/>
   <buttongroup name="offsetButtonGroup"/>
  </buttongroups>
 </ui>
