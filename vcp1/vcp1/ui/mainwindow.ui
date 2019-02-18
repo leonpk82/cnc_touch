@@ -257,7 +257,7 @@ font: 14pt &quot;DejaVu Sans&quot;; }
              <enum>QTabWidget::Triangular</enum>
             </property>
             <property name="currentIndex">
-             <number>2</number>
+             <number>1</number>
             </property>
             <property name="movable">
              <bool>true</bool>
@@ -429,7 +429,7 @@ font: 14pt &quot;DejaVu Sans&quot;; }
                     <property name="bottomMargin">
                      <number>5</number>
                     </property>
-                    <item row="1" column="3" alignment="Qt::AlignTop">
+                    <item row="2" column="3" alignment="Qt::AlignTop">
                      <widget class="QFrame" name="gridFrame">
                       <property name="sizePolicy">
                        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -494,7 +494,7 @@ font: 14pt &quot;DejaVu Sans&quot;; }
                             <property name="maximumSize">
                              <size>
                               <width>190</width>
-                              <height>20</height>
+                              <height>25</height>
                              </size>
                             </property>
                             <property name="font">
@@ -958,6 +958,78 @@ background-color:rgb(52, 101, 164);</string>
                       </layout>
                      </widget>
                     </item>
+                    <item row="1" column="3">
+                     <widget class="QFrame" name="gridFrame">
+                      <property name="frameShape">
+                       <enum>QFrame::Box</enum>
+                      </property>
+                      <layout class="QGridLayout" name="gridLayout_48">
+                       <item row="0" column="0">
+                        <widget class="StatusLabel" name="statuslabel_45">
+                         <property name="maximumSize">
+                          <size>
+                           <width>50</width>
+                           <height>30</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">color: rgb(255, 255, 255);
+background-color:rgb(52, 101, 164);</string>
+                         </property>
+                         <property name="frameShape">
+                          <enum>QFrame::Box</enum>
+                         </property>
+                         <property name="rules" stdset="0">
+                          <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:task_state?text&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="1">
+                        <widget class="StatusLabel" name="statuslabel_34">
+                         <property name="maximumSize">
+                          <size>
+                           <width>50</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">color: rgb(255, 255, 255);
+background-color:rgb(52, 101, 164);</string>
+                         </property>
+                         <property name="frameShape">
+                          <enum>QFrame::Box</enum>
+                         </property>
+                         <property name="rules" stdset="0">
+                          <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:task_mode?text&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;mode&quot;}]</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="2">
+                        <widget class="StatusLabel" name="statuslabel_32">
+                         <property name="maximumSize">
+                          <size>
+                           <width>40</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">color: rgb(255, 255, 255);
+background-color:rgb(52, 101, 164);</string>
+                         </property>
+                         <property name="frameShape">
+                          <enum>QFrame::Box</enum>
+                         </property>
+                         <property name="frameShadow">
+                          <enum>QFrame::Plain</enum>
+                         </property>
+                         <property name="rules" stdset="0">
+                          <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:state?text&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0] &quot;, &quot;name&quot;: &quot;State&quot;}]</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
                    </layout>
                   </widget>
                  </item>
@@ -1061,9 +1133,15 @@ background-color:rgb(52, 101, 164);</string>
                     </item>
                     <item row="0" column="0">
                      <widget class="QFrame" name="gridFrame">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
                       <property name="minimumSize">
                        <size>
-                        <width>75</width>
+                        <width>80</width>
                         <height>140</height>
                        </size>
                       </property>
@@ -1300,41 +1378,6 @@ background-color:rgb(52, 101, 164);</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignCenter</set>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="5" column="2">
-                        <widget class="StatusLabel" name="statuslabel_32">
-                         <property name="maximumSize">
-                          <size>
-                           <width>45</width>
-                           <height>16777215</height>
-                          </size>
-                         </property>
-                         <property name="frameShape">
-                          <enum>QFrame::Box</enum>
-                         </property>
-                         <property name="frameShadow">
-                          <enum>QFrame::Plain</enum>
-                         </property>
-                         <property name="rules" stdset="0">
-                          <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:state?text&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0] &quot;, &quot;name&quot;: &quot;State&quot;}]</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="5" column="1">
-                        <widget class="StatusLabel" name="statuslabel_34">
-                         <property name="maximumSize">
-                          <size>
-                           <width>60</width>
-                           <height>16777215</height>
-                          </size>
-                         </property>
-                         <property name="frameShape">
-                          <enum>QFrame::Box</enum>
-                         </property>
-                         <property name="rules" stdset="0">
-                          <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:task_mode?text&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;mode&quot;}]</string>
                          </property>
                         </widget>
                        </item>
@@ -2870,7 +2913,7 @@ font: 14pt &quot;DejaVu Sans&quot;; }
              <enum>QTabWidget::Triangular</enum>
             </property>
             <property name="currentIndex">
-             <number>2</number>
+             <number>1</number>
             </property>
             <property name="documentMode">
              <bool>false</bool>
@@ -5339,22 +5382,6 @@ font: 14pt &quot;DejaVu Sans&quot;;
    </hints>
   </connection>
   <connection>
-   <sender>tooltable</sender>
-   <signal>doubleClicked(QModelIndex)</signal>
-   <receiver>tooltable</receiver>
-   <slot>edit(QModelIndex)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>689</x>
-     <y>262</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>689</x>
-     <y>262</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
    <sender>SETTOOLDIAMETER</sender>
    <signal>clicked()</signal>
    <receiver>toolOffsetLabel</receiver>
@@ -5399,6 +5426,22 @@ font: 14pt &quot;DejaVu Sans&quot;;
     <hint type="destinationlabel">
      <x>550</x>
      <y>375</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tooltable</sender>
+   <signal>doubleClicked(QModelIndex)</signal>
+   <receiver>tooltable</receiver>
+   <slot>edit(QModelIndex)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>689</x>
+     <y>262</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>689</x>
+     <y>262</y>
     </hint>
    </hints>
   </connection>
