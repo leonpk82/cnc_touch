@@ -20,4 +20,4 @@ plot
 dro, abs and rel are reversed in the widget rules so they read correct
 
 Mdi panel
-
+CURRENTLY if you use the button to save the tool table it sets the pocket to -1 and borks the tool change buttons
