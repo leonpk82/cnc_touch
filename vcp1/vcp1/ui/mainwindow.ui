@@ -257,7 +257,7 @@ font: 14pt &quot;DejaVu Sans&quot;; }
              <enum>QTabWidget::Triangular</enum>
             </property>
             <property name="currentIndex">
-             <number>1</number>
+             <number>2</number>
             </property>
             <property name="movable">
              <bool>true</bool>
@@ -1792,7 +1792,7 @@ font: 14pt &quot;DejaVu Sans&quot;;
                    <property name="maximumSize">
                     <size>
                      <width>16777215</width>
-                     <height>40</height>
+                     <height>50</height>
                     </size>
                    </property>
                    <property name="frameShape">
@@ -3917,7 +3917,7 @@ background-color:rgb(52, 101, 164);</string>
                    <property name="maximumSize">
                     <size>
                      <width>16777215</width>
-                     <height>40</height>
+                     <height>50</height>
                     </size>
                    </property>
                    <property name="frameShape">
