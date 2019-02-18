@@ -314,7 +314,7 @@ font: 14pt &quot;DejaVu Sans&quot;; }
              <enum>QTabWidget::Triangular</enum>
             </property>
             <property name="currentIndex">
-             <number>1</number>
+             <number>3</number>
             </property>
             <property name="movable">
              <bool>true</bool>
@@ -2995,7 +2995,7 @@ background-color:rgb(52, 101, 164);</string>
                        <string>AUTO</string>
                       </property>
                       <property name="rules" stdset="0">
-                       <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:task_mode&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;\&quot;background-color:rgb(138, 226, 52)\&quot; if ch[0]==2 else ''&quot;, &quot;name&quot;: &quot;color&quot;}]</string>
+                       <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:task_mode&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;\&quot;background-color:rgb(138, 226, 52)\&quot; if ch[0]==2 else ''&quot;, &quot;name&quot;: &quot;color&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:state&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;\&quot;background-color:rgb(255, 0,0)\&quot; if ch[0]==3 else ''&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
                       </property>
                       <property name="actionName" stdset="0">
                        <string>machine.mode.auto</string>
