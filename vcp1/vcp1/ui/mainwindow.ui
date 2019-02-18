@@ -330,7 +330,7 @@ font: 14pt &quot;DejaVu Sans&quot;; }
              <enum>QTabWidget::Triangular</enum>
             </property>
             <property name="currentIndex">
-             <number>3</number>
+             <number>0</number>
             </property>
             <property name="movable">
              <bool>true</bool>
@@ -3140,7 +3140,7 @@ font: 14pt &quot;DejaVu Sans&quot;; }
              <enum>QTabWidget::Triangular</enum>
             </property>
             <property name="currentIndex">
-             <number>2</number>
+             <number>1</number>
             </property>
             <property name="documentMode">
              <bool>false</bool>
@@ -3336,6 +3336,12 @@ font: 12pt &quot;DejaVu Sans&quot;;
                 <property name="frameShape">
                  <enum>QFrame::Box</enum>
                 </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Sunken</enum>
+                </property>
+                <property name="lineWidth">
+                 <number>2</number>
+                </property>
                 <layout class="QGridLayout" name="gridLayout_39">
                  <property name="leftMargin">
                   <number>5</number>
@@ -3403,6 +3409,12 @@ font: 12pt &quot;DejaVu Sans&quot;;
                 </property>
                 <property name="frameShape">
                  <enum>QFrame::Box</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Plain</enum>
+                </property>
+                <property name="lineWidth">
+                 <number>1</number>
                 </property>
                 <layout class="QGridLayout" name="gridLayout_46">
                  <property name="leftMargin">
@@ -5383,7 +5395,7 @@ font: 14pt &quot;DejaVu Sans&quot;;
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../resources/images/vcp1.qrc"/>
+  <include location="../resources/resources.qrc"/>
  </resources>
  <connections>
   <connection>
@@ -5842,7 +5854,7 @@ font: 14pt &quot;DejaVu Sans&quot;;
    <hints>
     <hint type="sourcelabel">
      <x>739</x>
-     <y>496</y>
+     <y>493</y>
     </hint>
     <hint type="destinationlabel">
      <x>692</x>
@@ -5857,12 +5869,28 @@ font: 14pt &quot;DejaVu Sans&quot;;
    <slot>clearToolTable()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>841</x>
-     <y>496</y>
+     <x>839</x>
+     <y>493</y>
     </hint>
     <hint type="destinationlabel">
      <x>692</x>
      <y>287</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tooltable</sender>
+   <signal>entered(QModelIndex)</signal>
+   <receiver>tooltable</receiver>
+   <slot>saveToolTable()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>540</x>
+     <y>341</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>540</x>
+     <y>341</y>
     </hint>
    </hints>
   </connection>
