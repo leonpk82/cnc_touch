@@ -107,7 +107,7 @@ GridFrame::{ background-color: rgb(52, 101, 164);}</string>
           <property name="bottomMargin">
            <number>5</number>
           </property>
-          <item row="1" column="2">
+          <item row="1" column="3">
            <widget class="ActionButton" name="actionbutton_3">
             <property name="rules" stdset="0">
              <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:joint[0].homed&quot;, &quot;trigger&quot;: true}, {&quot;url&quot;: &quot;status:joint[1].homed&quot;, &quot;trigger&quot;: true}, {&quot;url&quot;: &quot;status:joint[2].homed&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'HOMED' if ch[0] and ch[1] and ch[2] else 'Home\\nAll'&quot;, &quot;name&quot;: &quot;Button Name&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:joint[0].homed&quot;, &quot;trigger&quot;: true}, {&quot;url&quot;: &quot;status:joint[1].homed&quot;, &quot;trigger&quot;: false}, {&quot;url&quot;: &quot;status:joint[2].homed&quot;, &quot;trigger&quot;: false}, {&quot;url&quot;: &quot;status:joint[3].homed&quot;, &quot;trigger&quot;: false}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;\&quot;background-color:rgb(138, 226, 52)\&quot; if ch[0] and ch[1] and ch[2] and ch[2] else ''&quot;, &quot;name&quot;: &quot;back color&quot;}]</string>
@@ -117,7 +117,7 @@ GridFrame::{ background-color: rgb(52, 101, 164);}</string>
             </property>
            </widget>
           </item>
-          <item row="1" column="0">
+          <item row="1" column="1">
            <widget class="ActionButton" name="actionbutton">
             <property name="text">
              <string>E-STOP</string>
@@ -130,7 +130,7 @@ GridFrame::{ background-color: rgb(52, 101, 164);}</string>
             </property>
            </widget>
           </item>
-          <item row="1" column="1">
+          <item row="1" column="2">
            <widget class="ActionButton" name="actionbutton_2">
             <property name="text">
              <string>POWER</string>
@@ -143,7 +143,7 @@ GridFrame::{ background-color: rgb(52, 101, 164);}</string>
             </property>
            </widget>
           </item>
-          <item row="1" column="6">
+          <item row="1" column="7">
            <widget class="ActionButton" name="actionbutton_17">
             <property name="text">
              <string>HOME X</string>
@@ -156,7 +156,7 @@ GridFrame::{ background-color: rgb(52, 101, 164);}</string>
             </property>
            </widget>
           </item>
-          <item row="1" column="8">
+          <item row="1" column="9">
            <widget class="ActionButton" name="actionbutton_19">
             <property name="text">
              <string>HOME Z</string>
@@ -169,7 +169,7 @@ GridFrame::{ background-color: rgb(52, 101, 164);}</string>
             </property>
            </widget>
           </item>
-          <item row="1" column="7">
+          <item row="1" column="8">
            <widget class="ActionButton" name="actionbutton_18">
             <property name="text">
              <string>HOME Y</string>
@@ -182,7 +182,7 @@ GridFrame::{ background-color: rgb(52, 101, 164);}</string>
             </property>
            </widget>
           </item>
-          <item row="1" column="9">
+          <item row="1" column="10">
            <widget class="ActionButton" name="actionbutton_20">
             <property name="text">
              <string>HOME A</string>
@@ -195,7 +195,7 @@ GridFrame::{ background-color: rgb(52, 101, 164);}</string>
             </property>
            </widget>
           </item>
-          <item row="1" column="4">
+          <item row="1" column="5">
            <widget class="ActionButton" name="manual_2">
             <property name="maximumSize">
              <size>
@@ -214,7 +214,7 @@ GridFrame::{ background-color: rgb(52, 101, 164);}</string>
             </property>
            </widget>
           </item>
-          <item row="1" column="5">
+          <item row="1" column="6">
            <widget class="ActionButton" name="mdi_2">
             <property name="maximumSize">
              <size>
@@ -233,7 +233,7 @@ GridFrame::{ background-color: rgb(52, 101, 164);}</string>
             </property>
            </widget>
           </item>
-          <item row="1" column="3">
+          <item row="1" column="4">
            <widget class="ActionButton" name="auto_3">
             <property name="maximumSize">
              <size>
@@ -245,10 +245,23 @@ GridFrame::{ background-color: rgb(52, 101, 164);}</string>
              <string>AUTO</string>
             </property>
             <property name="rules" stdset="0">
-             <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status: task_mode&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;\&quot;background-color:rgb(138, 226, 52)\&quot; if ch[0]==2 else ''&quot;, &quot;name&quot;: &quot;color&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:state&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;\&quot;background-color:rgb(255, 0,0)\&quot; if ch[0]==3 else ''&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
+             <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status: task_mode&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;\&quot;background-color:rgb(138, 226, 52)\&quot; if ch[0]==2 else ''&quot;, &quot;name&quot;: &quot;color&quot;}]</string>
             </property>
             <property name="actionName" stdset="0">
              <string>machine.mode.auto</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="StatusLED" name="statusled">
+            <property name="maximumSize">
+             <size>
+              <width>45</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="rules" stdset="0">
+             <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:state&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Flashing&quot;, &quot;expression&quot;: &quot;ch[0]==3&quot;, &quot;name&quot;: &quot;alarm&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:state&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Enable&quot;, &quot;expression&quot;: &quot;ch[0]==3&quot;, &quot;name&quot;: &quot;enable when in alarm&quot;}]</string>
             </property>
            </widget>
           </item>
@@ -314,7 +327,7 @@ font: 14pt &quot;DejaVu Sans&quot;; }
              <enum>QTabWidget::Triangular</enum>
             </property>
             <property name="currentIndex">
-             <number>3</number>
+             <number>2</number>
             </property>
             <property name="movable">
              <bool>true</bool>
@@ -370,6 +383,9 @@ font: 14pt &quot;DejaVu Sans&quot;; }
                    </property>
                    <property name="lineWidth">
                     <number>5</number>
+                   </property>
+                   <property name="sortingEnabled">
+                    <bool>true</bool>
                    </property>
                    <property name="hiddenColumns" stdset="0">
                     <string>1,2</string>
@@ -1574,20 +1590,27 @@ font: 14pt &quot;DejaVu Sans&quot;;
                  <property name="bottomMargin">
                   <number>5</number>
                  </property>
-                 <item row="7" column="2">
-                  <widget class="QPushButton" name="pushButton_5">
+                 <item row="11" column="1">
+                  <widget class="QPushButton" name="pushButton_24">
                    <property name="text">
-                    <string>M</string>
+                    <string>.</string>
                    </property>
                    <attribute name="buttonGroup">
                     <string notr="true">mdiButtonGroup</string>
                    </attribute>
                   </widget>
                  </item>
-                 <item row="11" column="4">
-                  <widget class="QPushButton" name="pushButton_26">
+                 <item row="1" column="7">
+                  <widget class="StatusLabel" name="statuslabel_20">
+                   <property name="rules" stdset="0">
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:state?text&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;str(ch[0])&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="7" column="2">
+                  <widget class="QPushButton" name="pushButton_5">
                    <property name="text">
-                    <string>-</string>
+                    <string>M</string>
                    </property>
                    <attribute name="buttonGroup">
                     <string notr="true">mdiButtonGroup</string>
@@ -1704,13 +1727,6 @@ font: 14pt &quot;DejaVu Sans&quot;;
                    </attribute>
                   </widget>
                  </item>
-                 <item row="4" column="6">
-                  <widget class="StatusLabel" name="statuslabel_20">
-                   <property name="rules" stdset="0">
-                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:state?&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;str(ch[0])&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
-                   </property>
-                  </widget>
-                 </item>
                  <item row="10" column="2">
                   <widget class="QPushButton" name="pushButton_19">
                    <property name="text">
@@ -1801,30 +1817,10 @@ font: 14pt &quot;DejaVu Sans&quot;;
                    </attribute>
                   </widget>
                  </item>
-                 <item row="11" column="3">
-                  <widget class="QPushButton" name="pushButton_25">
-                   <property name="text">
-                    <string>+</string>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">mdiButtonGroup</string>
-                   </attribute>
-                  </widget>
-                 </item>
                  <item row="11" column="2">
                   <widget class="QPushButton" name="pushButton_23">
                    <property name="text">
                     <string>0</string>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">mdiButtonGroup</string>
-                   </attribute>
-                  </widget>
-                 </item>
-                 <item row="11" column="1">
-                  <widget class="QPushButton" name="pushButton_24">
-                   <property name="text">
-                    <string>.</string>
                    </property>
                    <attribute name="buttonGroup">
                     <string notr="true">mdiButtonGroup</string>
@@ -2022,7 +2018,27 @@ background-color:rgb(52, 101, 164);</string>
                    </attribute>
                   </widget>
                  </item>
-                 <item row="1" column="3">
+                 <item row="1" column="2">
+                  <widget class="MDIButton" name="SETUPPOS">
+                   <property name="font">
+                    <font>
+                     <family>DejaVu Sans</family>
+                     <pointsize>14</pointsize>
+                     <weight>50</weight>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>G90G0
+X0Y0</string>
+                   </property>
+                   <property name="MDICommand" stdset="0">
+                    <string>G90G0X0Y0</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="4">
                   <spacer name="verticalSpacer_3">
                    <property name="orientation">
                     <enum>Qt::Vertical</enum>
@@ -2034,6 +2050,37 @@ background-color:rgb(52, 101, 164);</string>
                     </size>
                    </property>
                   </spacer>
+                 </item>
+                 <item row="11" column="4">
+                  <widget class="QPushButton" name="pushButton_25">
+                   <property name="text">
+                    <string>+</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">mdiButtonGroup</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="MDIButton" name="z0">
+                   <property name="text">
+                    <string>G28
+Z0</string>
+                   </property>
+                   <property name="MDICommand" stdset="0">
+                    <string>G91G28Z0</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="11" column="3">
+                  <widget class="QPushButton" name="pushButton_26">
+                   <property name="text">
+                    <string>-</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">mdiButtonGroup</string>
+                   </attribute>
+                  </widget>
                  </item>
                 </layout>
                </widget>
@@ -2995,7 +3042,7 @@ background-color:rgb(52, 101, 164);</string>
                        <string>AUTO</string>
                       </property>
                       <property name="rules" stdset="0">
-                       <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:task_mode&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;\&quot;background-color:rgb(138, 226, 52)\&quot; if ch[0]==2 else ''&quot;, &quot;name&quot;: &quot;color&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:state&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;\&quot;background-color:rgb(255, 0,0)\&quot; if ch[0]==3 else ''&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
+                       <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:task_mode&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;\&quot;background-color:rgb(138, 226, 52)\&quot; if ch[0]==2 else ''&quot;, &quot;name&quot;: &quot;color&quot;}]</string>
                       </property>
                       <property name="actionName" stdset="0">
                        <string>machine.mode.auto</string>
@@ -3090,7 +3137,7 @@ font: 14pt &quot;DejaVu Sans&quot;; }
              <enum>QTabWidget::Triangular</enum>
             </property>
             <property name="currentIndex">
-             <number>3</number>
+             <number>2</number>
             </property>
             <property name="documentMode">
              <bool>false</bool>
@@ -5188,6 +5235,11 @@ font: 14pt &quot;DejaVu Sans&quot;;
    <header>qtpyvcp.widgets.input_widgets.gcode_editor</header>
   </customwidget>
   <customwidget>
+   <class>StatusLED</class>
+   <extends>QWidget</extends>
+   <header>qtpyvcp.widgets.display_widgets.status_led</header>
+  </customwidget>
+  <customwidget>
    <class>FileSystemTable</class>
    <extends>QTableView</extends>
    <header>qtpyvcp.widgets.input_widgets.file_system</header>
@@ -5627,8 +5679,8 @@ font: 14pt &quot;DejaVu Sans&quot;;
   </connection>
  </connections>
  <buttongroups>
+  <buttongroup name="offsetButtonGroup"/>
   <buttongroup name="toolOffsetGroup"/>
   <buttongroup name="mdiButtonGroup"/>
-  <buttongroup name="offsetButtonGroup"/>
  </buttongroups>
 </ui>
