@@ -413,6 +413,18 @@ font: 14pt &quot;DejaVu Sans&quot;; }
                  </property>
                  <item row="0" column="0">
                   <widget class="QFrame" name="gridFrame">
+                   <property name="minimumSize">
+                    <size>
+                     <width>180</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>185</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
                    <property name="frameShape">
                     <enum>QFrame::Box</enum>
                    </property>
@@ -968,7 +980,7 @@ background-color:rgb(52, 101, 164);</string>
                         <widget class="StatusLabel" name="statuslabel_45">
                          <property name="maximumSize">
                           <size>
-                           <width>50</width>
+                           <width>45</width>
                            <height>30</height>
                           </size>
                          </property>
@@ -988,7 +1000,7 @@ background-color:rgb(52, 101, 164);</string>
                         <widget class="StatusLabel" name="statuslabel_34">
                          <property name="maximumSize">
                           <size>
-                           <width>50</width>
+                           <width>60</width>
                            <height>16777215</height>
                           </size>
                          </property>
@@ -2885,6 +2897,92 @@ background-color:rgb(52, 101, 164);</string>
                    </layout>
                   </widget>
                  </item>
+                 <item row="4" column="2">
+                  <widget class="QFrame" name="gridFrame">
+                   <property name="frameShape">
+                    <enum>QFrame::Box</enum>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_53">
+                    <property name="leftMargin">
+                     <number>5</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>5</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>5</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>5</number>
+                    </property>
+                    <item row="1" column="3">
+                     <widget class="ActionButton" name="actionbutton_21">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>52</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>MDI</string>
+                      </property>
+                      <property name="actionName" stdset="0">
+                       <string>machine.mode.mdi</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="ActionButton" name="actionbutton_25">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>52</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>AUTO</string>
+                      </property>
+                      <property name="actionName" stdset="0">
+                       <string>machine.mode.auto</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="2">
+                     <widget class="ActionButton" name="jogmode">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>52</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>MANUAL</string>
+                      </property>
+                      <property name="actionName" stdset="0">
+                       <string>machine.mode.manual</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1" colspan="3">
+                     <widget class="QLabel" name="label_48">
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(255, 255, 255);
+background-color:rgb(52, 101, 164);</string>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::Box</enum>
+                      </property>
+                      <property name="text">
+                       <string>MODE</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
                 </layout>
                </widget>
               </item>
@@ -3295,6 +3393,9 @@ background-color:rgb(52, 101, 164);</string>
               </property>
               <property name="wordWrap">
                <bool>true</bool>
+              </property>
+              <property name="displayColumns" stdset="0">
+               <string>TPZDRXY</string>
               </property>
               <attribute name="horizontalHeaderDefaultSectionSize">
                <number>62</number>
@@ -5366,22 +5467,6 @@ font: 14pt &quot;DejaVu Sans&quot;;
    </hints>
   </connection>
   <connection>
-   <sender>tooltable</sender>
-   <signal>clicked(QModelIndex)</signal>
-   <receiver>tooltable</receiver>
-   <slot>loadToolTable()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>590</x>
-     <y>241</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>591</x>
-     <y>241</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
    <sender>SETTOOLDIAMETER</sender>
    <signal>clicked()</signal>
    <receiver>toolOffsetLabel</receiver>
@@ -5431,6 +5516,22 @@ font: 14pt &quot;DejaVu Sans&quot;;
   </connection>
   <connection>
    <sender>tooltable</sender>
+   <signal>clicked(QModelIndex)</signal>
+   <receiver>tooltable</receiver>
+   <slot>loadToolTable()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>590</x>
+     <y>241</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>591</x>
+     <y>241</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tooltable</sender>
    <signal>doubleClicked(QModelIndex)</signal>
    <receiver>tooltable</receiver>
    <slot>edit(QModelIndex)</slot>
@@ -5447,8 +5548,8 @@ font: 14pt &quot;DejaVu Sans&quot;;
   </connection>
  </connections>
  <buttongroups>
-  <buttongroup name="offsetButtonGroup"/>
-  <buttongroup name="toolOffsetGroup"/>
   <buttongroup name="mdiButtonGroup"/>
+  <buttongroup name="toolOffsetGroup"/>
+  <buttongroup name="offsetButtonGroup"/>
  </buttongroups>
 </ui>
