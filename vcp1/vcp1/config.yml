@@ -36,6 +36,14 @@ data_plugins:
       # specify text to be added before the tool table data
       file_header_template: |
         LinuxCNC Tool Table
+
+
+
+data_plugins:
+  clock:
+    provider: qtpyvcp.plugins.clock:Clock
+
+
        
 windows:
 
