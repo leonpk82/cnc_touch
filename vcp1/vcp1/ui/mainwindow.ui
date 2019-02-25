@@ -296,7 +296,7 @@ GridFrame::{ background-color: rgb(52, 101, 164);}</string>
            <widget class="QFrame" name="gridFrame">
             <property name="maximumSize">
              <size>
-              <width>180</width>
+              <width>160</width>
               <height>16777215</height>
              </size>
             </property>
@@ -381,7 +381,7 @@ GridFrame::{ background-color: rgb(52, 101, 164);}</string>
                   </property>
                   <property name="maximumSize">
                    <size>
-                    <width>128</width>
+                    <width>140</width>
                     <height>35</height>
                    </size>
                   </property>
@@ -497,7 +497,7 @@ background-color:rgb(52, 101, 164);</string>
                  <widget class="ActionSlider" name="actionslider">
                   <property name="maximumSize">
                    <size>
-                    <width>200</width>
+                    <width>140</width>
                     <height>35</height>
                    </size>
                   </property>
@@ -645,7 +645,7 @@ background-color:rgb(52, 101, 164);</string>
                   </property>
                   <property name="maximumSize">
                    <size>
-                    <width>128</width>
+                    <width>140</width>
                     <height>35</height>
                    </size>
                   </property>
