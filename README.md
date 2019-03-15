@@ -17,7 +17,11 @@ work offset measurment
 
 plot
 
-dro, abs and rel are reversed in the widget rules so they read correct
+dro, abs and rel are reversed in the widget rules this may be opposite of what typical linuc cnc displays are setup
+they have
+machine is actual joint pos from home
+absolute is relative of the active work offset
+distance to go is distance to go
 
 Mdi panel
 
