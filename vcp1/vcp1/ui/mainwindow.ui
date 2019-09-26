@@ -111,7 +111,7 @@ GridFrame::{ background-color: rgb(52, 101, 164);}</string>
            <number>5</number>
           </property>
           <item row="1" column="3">
-           <widget class="ActionButton" name="actionbutton_3">
+           <widget class="ActionButton" name="homeall">
             <property name="rules" stdset="0">
              <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed&quot;, &quot;trigger&quot;: true}, {&quot;url&quot;: &quot;status:joint.1.homed&quot;, &quot;trigger&quot;: false}, {&quot;url&quot;: &quot;status:joint.2.homed&quot;, &quot;trigger&quot;: false}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'HOMED' if ch[0][0] and ch[0][1] and ch[0][2] else 'Home\\nAll'&quot;, &quot;name&quot;: &quot;Button Name&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed&quot;, &quot;trigger&quot;: true}, {&quot;url&quot;: &quot;status:joint.1.homed&quot;, &quot;trigger&quot;: false}, {&quot;url&quot;: &quot;status:joint.2.homed&quot;, &quot;trigger&quot;: false}, {&quot;url&quot;: &quot;status:joint.2.homed&quot;, &quot;trigger&quot;: false}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;\&quot;background-color:rgb(138, 226, 52)\&quot; if ch[0][0] and ch[0][1] and ch[0][2] and ch[0][2] else ''&quot;, &quot;name&quot;: &quot;back color&quot;}]</string>
             </property>
@@ -121,7 +121,7 @@ GridFrame::{ background-color: rgb(52, 101, 164);}</string>
            </widget>
           </item>
           <item row="1" column="1">
-           <widget class="ActionButton" name="actionbutton">
+           <widget class="ActionButton" name="estop">
             <property name="styleSheet">
              <string notr="true"/>
             </property>
@@ -137,7 +137,7 @@ GridFrame::{ background-color: rgb(52, 101, 164);}</string>
            </widget>
           </item>
           <item row="1" column="2">
-           <widget class="ActionButton" name="actionbutton_2">
+           <widget class="ActionButton" name="power">
             <property name="text">
              <string>POWER</string>
             </property>
@@ -150,7 +150,7 @@ GridFrame::{ background-color: rgb(52, 101, 164);}</string>
            </widget>
           </item>
           <item row="1" column="7">
-           <widget class="ActionButton" name="actionbutton_17">
+           <widget class="ActionButton" name="home_x">
             <property name="text">
              <string>HOME X</string>
             </property>
@@ -163,7 +163,7 @@ GridFrame::{ background-color: rgb(52, 101, 164);}</string>
            </widget>
           </item>
           <item row="1" column="9">
-           <widget class="ActionButton" name="actionbutton_19">
+           <widget class="ActionButton" name="home_z">
             <property name="text">
              <string>HOME Z</string>
             </property>
@@ -176,7 +176,7 @@ GridFrame::{ background-color: rgb(52, 101, 164);}</string>
            </widget>
           </item>
           <item row="1" column="8">
-           <widget class="ActionButton" name="actionbutton_18">
+           <widget class="ActionButton" name="home_y">
             <property name="text">
              <string>HOME Y</string>
             </property>
@@ -189,7 +189,7 @@ GridFrame::{ background-color: rgb(52, 101, 164);}</string>
            </widget>
           </item>
           <item row="1" column="10">
-           <widget class="ActionButton" name="actionbutton_20">
+           <widget class="ActionButton" name="home_a">
             <property name="text">
              <string>HOME A</string>
             </property>
@@ -259,7 +259,7 @@ GridFrame::{ background-color: rgb(52, 101, 164);}</string>
            </widget>
           </item>
           <item row="1" column="0">
-           <widget class="StatusLED" name="statusled">
+           <widget class="StatusLED" name="error">
             <property name="maximumSize">
              <size>
               <width>45</width>
@@ -1103,7 +1103,7 @@ font: 14pt &quot;DejaVu Sans&quot;; }
              <enum>QTabWidget::Triangular</enum>
             </property>
             <property name="currentIndex">
-             <number>1</number>
+             <number>3</number>
             </property>
             <property name="movable">
              <bool>true</bool>
@@ -1935,167 +1935,6 @@ background-color:rgb(52, 101, 164);</string>
                     <enum>QFrame::Box</enum>
                    </property>
                    <layout class="QGridLayout" name="gridLayout_26">
-                    <item row="1" column="1" rowspan="2">
-                     <widget class="QFrame" name="gridFrame">
-                      <property name="minimumSize">
-                       <size>
-                        <width>0</width>
-                        <height>100</height>
-                       </size>
-                      </property>
-                      <property name="maximumSize">
-                       <size>
-                        <width>160</width>
-                        <height>100</height>
-                       </size>
-                      </property>
-                      <property name="frameShape">
-                       <enum>QFrame::Box</enum>
-                      </property>
-                      <layout class="QGridLayout" name="gridLayout_32">
-                       <property name="leftMargin">
-                        <number>5</number>
-                       </property>
-                       <property name="topMargin">
-                        <number>5</number>
-                       </property>
-                       <property name="rightMargin">
-                        <number>5</number>
-                       </property>
-                       <property name="bottomMargin">
-                        <number>5</number>
-                       </property>
-                       <item row="1" column="1" colspan="2">
-                        <widget class="StatusLabel" name="spindlespeed">
-                         <property name="minimumSize">
-                          <size>
-                           <width>0</width>
-                           <height>25</height>
-                          </size>
-                         </property>
-                         <property name="maximumSize">
-                          <size>
-                           <width>190</width>
-                           <height>25</height>
-                          </size>
-                         </property>
-                         <property name="styleSheet">
-                          <string notr="true">color: rgb(255, 255, 255);
-background-color:rgb(52, 101, 164);</string>
-                         </property>
-                         <property name="frameShape">
-                          <enum>QFrame::Box</enum>
-                         </property>
-                         <property name="lineWidth">
-                          <number>2</number>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignCenter</set>
-                         </property>
-                         <property name="rules" stdset="0">
-                          <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:spindle.0.speed&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'RPM ' + '{:.0f}'.format(ch[0])&quot;, &quot;name&quot;: &quot;spindle speed&quot;}]</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="1" column="0">
-                        <widget class="StatusLabel" name="tool_in_spindle_2">
-                         <property name="minimumSize">
-                          <size>
-                           <width>0</width>
-                           <height>25</height>
-                          </size>
-                         </property>
-                         <property name="maximumSize">
-                          <size>
-                           <width>40</width>
-                           <height>16777215</height>
-                          </size>
-                         </property>
-                         <property name="styleSheet">
-                          <string notr="true">color: rgb(255, 255, 255);
-background-color:rgb(52, 101, 164);</string>
-                         </property>
-                         <property name="frameShape">
-                          <enum>QFrame::Box</enum>
-                         </property>
-                         <property name="lineWidth">
-                          <number>2</number>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignJustify|Qt::AlignVCenter</set>
-                         </property>
-                         <property name="rules" stdset="0">
-                          <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:tool_in_spindle&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'T# ' + str(ch[0])&quot;, &quot;name&quot;: &quot;current spindle tool&quot;}]</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="0" column="0" colspan="3">
-                        <widget class="QLabel" name="label_38">
-                         <property name="minimumSize">
-                          <size>
-                           <width>0</width>
-                           <height>20</height>
-                          </size>
-                         </property>
-                         <property name="maximumSize">
-                          <size>
-                           <width>190</width>
-                           <height>25</height>
-                          </size>
-                         </property>
-                         <property name="styleSheet">
-                          <string notr="true">color: rgb(255, 255, 255);
-background-color:rgb(52, 101, 164);</string>
-                         </property>
-                         <property name="frameShape">
-                          <enum>QFrame::Box</enum>
-                         </property>
-                         <property name="text">
-                          <string>SPINDLE</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignCenter</set>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="2" column="0" colspan="3">
-                        <widget class="StatusLabel" name="tool_in_spindle_comment">
-                         <property name="minimumSize">
-                          <size>
-                           <width>80</width>
-                           <height>25</height>
-                          </size>
-                         </property>
-                         <property name="maximumSize">
-                          <size>
-                           <width>16777215</width>
-                           <height>25</height>
-                          </size>
-                         </property>
-                         <property name="styleSheet">
-                          <string notr="true">color: rgb(255, 255, 255);
-background-color:rgb(52, 101, 164);</string>
-                         </property>
-                         <property name="frameShape">
-                          <enum>QFrame::Box</enum>
-                         </property>
-                         <property name="lineWidth">
-                          <number>2</number>
-                         </property>
-                         <property name="text">
-                          <string>No Tool Loaded</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignCenter</set>
-                         </property>
-                         <property name="rules" stdset="0">
-                          <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;tooltable:current_tool?remark&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;tool comment&quot;}]</string>
-                         </property>
-                        </widget>
-                       </item>
-                      </layout>
-                     </widget>
-                    </item>
                     <item row="0" column="0" rowspan="2">
                      <widget class="QFrame" name="gridFrame">
                       <property name="minimumSize">
@@ -2265,6 +2104,32 @@ background-color:rgb(52, 101, 164);</string>
                        <enum>QFrame::Box</enum>
                       </property>
                       <layout class="QGridLayout" name="gridLayout_48">
+                       <item row="0" column="0" colspan="3">
+                        <widget class="QLabel" name="label_52">
+                         <property name="minimumSize">
+                          <size>
+                           <width>100</width>
+                           <height>25</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">color: rgb(255, 255, 255);
+background-color:rgb(52, 101, 164);</string>
+                         </property>
+                         <property name="frameShape">
+                          <enum>QFrame::Box</enum>
+                         </property>
+                         <property name="lineWidth">
+                          <number>2</number>
+                         </property>
+                         <property name="text">
+                          <string>STATUS</string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignCenter</set>
+                         </property>
+                        </widget>
+                       </item>
                        <item row="1" column="0">
                         <widget class="StatusLabel" name="task_state">
                          <property name="minimumSize">
@@ -2352,32 +2217,6 @@ background-color:rgb(52, 101, 164);</string>
                          </property>
                          <property name="rules" stdset="0">
                           <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:state?text&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0] &quot;, &quot;name&quot;: &quot;State&quot;}]</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="0" column="0" colspan="3">
-                        <widget class="QLabel" name="label_52">
-                         <property name="minimumSize">
-                          <size>
-                           <width>100</width>
-                           <height>25</height>
-                          </size>
-                         </property>
-                         <property name="styleSheet">
-                          <string notr="true">color: rgb(255, 255, 255);
-background-color:rgb(52, 101, 164);</string>
-                         </property>
-                         <property name="frameShape">
-                          <enum>QFrame::Box</enum>
-                         </property>
-                         <property name="lineWidth">
-                          <number>2</number>
-                         </property>
-                         <property name="text">
-                          <string>STATUS</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignCenter</set>
                          </property>
                         </widget>
                        </item>
@@ -2551,6 +2390,167 @@ background-color:rgb(52, 101, 164);</string>
                       </layout>
                      </widget>
                     </item>
+                    <item row="1" column="1" rowspan="2">
+                     <widget class="QFrame" name="gridFrame">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>100</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>160</width>
+                        <height>100</height>
+                       </size>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::Box</enum>
+                      </property>
+                      <layout class="QGridLayout" name="gridLayout_32">
+                       <property name="leftMargin">
+                        <number>5</number>
+                       </property>
+                       <property name="topMargin">
+                        <number>5</number>
+                       </property>
+                       <property name="rightMargin">
+                        <number>5</number>
+                       </property>
+                       <property name="bottomMargin">
+                        <number>5</number>
+                       </property>
+                       <item row="1" column="1" colspan="2">
+                        <widget class="StatusLabel" name="spindlespeed">
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>25</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>190</width>
+                           <height>25</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">color: rgb(255, 255, 255);
+background-color:rgb(52, 101, 164);</string>
+                         </property>
+                         <property name="frameShape">
+                          <enum>QFrame::Box</enum>
+                         </property>
+                         <property name="lineWidth">
+                          <number>2</number>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignCenter</set>
+                         </property>
+                         <property name="rules" stdset="0">
+                          <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:spindle.0.speed&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'RPM ' + '{:.0f}'.format(ch[0])&quot;, &quot;name&quot;: &quot;spindle speed&quot;}]</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="0">
+                        <widget class="StatusLabel" name="tool_in_spindle_2">
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>25</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>40</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">color: rgb(255, 255, 255);
+background-color:rgb(52, 101, 164);</string>
+                         </property>
+                         <property name="frameShape">
+                          <enum>QFrame::Box</enum>
+                         </property>
+                         <property name="lineWidth">
+                          <number>2</number>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+                         </property>
+                         <property name="rules" stdset="0">
+                          <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:tool_in_spindle&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'T# ' + str(ch[0])&quot;, &quot;name&quot;: &quot;current spindle tool&quot;}]</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="0" colspan="3">
+                        <widget class="QLabel" name="label_38">
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>20</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>190</width>
+                           <height>25</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">color: rgb(255, 255, 255);
+background-color:rgb(52, 101, 164);</string>
+                         </property>
+                         <property name="frameShape">
+                          <enum>QFrame::Box</enum>
+                         </property>
+                         <property name="text">
+                          <string>SPINDLE</string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignCenter</set>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="0" colspan="3">
+                        <widget class="StatusLabel" name="tool_in_spindle_comment">
+                         <property name="minimumSize">
+                          <size>
+                           <width>80</width>
+                           <height>25</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>16777215</width>
+                           <height>25</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">color: rgb(255, 255, 255);
+background-color:rgb(52, 101, 164);</string>
+                         </property>
+                         <property name="frameShape">
+                          <enum>QFrame::Box</enum>
+                         </property>
+                         <property name="lineWidth">
+                          <number>2</number>
+                         </property>
+                         <property name="text">
+                          <string>No Tool Loaded</string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignCenter</set>
+                         </property>
+                         <property name="rules" stdset="0">
+                          <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;tooltable:current_tool?remark&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;tool comment&quot;}]</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
                    </layout>
                   </widget>
                  </item>
@@ -2600,7 +2600,7 @@ background-color:rgb(52, 101, 164);
                   <number>5</number>
                  </property>
                  <item row="9" column="3">
-                  <widget class="QPushButton" name="pushButton_18">
+                  <widget class="QPushButton" name="mdi_9">
                    <property name="text">
                     <string>9</string>
                    </property>
@@ -2610,7 +2610,7 @@ background-color:rgb(52, 101, 164);
                   </widget>
                  </item>
                  <item row="11" column="1">
-                  <widget class="QPushButton" name="pushButton_14">
+                  <widget class="QPushButton" name="mdi_1">
                    <property name="text">
                     <string>1</string>
                    </property>
@@ -2620,7 +2620,7 @@ background-color:rgb(52, 101, 164);
                   </widget>
                  </item>
                  <item row="11" column="2">
-                  <widget class="QPushButton" name="pushButton_19">
+                  <widget class="QPushButton" name="mdi_10">
                    <property name="text">
                     <string>2</string>
                    </property>
@@ -2684,7 +2684,7 @@ background-color:rgb(52, 101, 164);
                   </widget>
                  </item>
                  <item row="10" column="1">
-                  <widget class="QPushButton" name="pushButton_28">
+                  <widget class="QPushButton" name="mdi_4">
                    <property name="text">
                     <string>4</string>
                    </property>
@@ -2694,7 +2694,7 @@ background-color:rgb(52, 101, 164);
                   </widget>
                  </item>
                  <item row="10" column="5">
-                  <widget class="QPushButton" name="pushButton_9">
+                  <widget class="QPushButton" name="mdi_k">
                    <property name="text">
                     <string>K</string>
                    </property>
@@ -2760,17 +2760,6 @@ background-color:rgb(52, 101, 164);</string>
                    </attribute>
                   </widget>
                  </item>
-                 <item row="2" column="1">
-                  <widget class="MDIButton" name="z0">
-                   <property name="text">
-                    <string>G28
-Z0</string>
-                   </property>
-                   <property name="MDICommand" stdset="0">
-                    <string>G91G28Z0</string>
-                   </property>
-                  </widget>
-                 </item>
                  <item row="8" column="6">
                   <widget class="QPushButton" name="g0">
                    <property name="text">
@@ -2782,7 +2771,7 @@ Z0</string>
                   </widget>
                  </item>
                  <item row="10" column="2">
-                  <widget class="QPushButton" name="pushButton_29">
+                  <widget class="QPushButton" name="mdi_5">
                    <property name="text">
                     <string>5</string>
                    </property>
@@ -2808,7 +2797,7 @@ Z0</string>
                   </widget>
                  </item>
                  <item row="8" column="4">
-                  <widget class="QPushButton" name="pushButton_17">
+                  <widget class="QPushButton" name="mdi_q">
                    <property name="text">
                     <string>Q</string>
                    </property>
@@ -2818,7 +2807,7 @@ Z0</string>
                   </widget>
                  </item>
                  <item row="7" column="5">
-                  <widget class="QPushButton" name="pushButton_12">
+                  <widget class="QPushButton" name="mdi_p">
                    <property name="text">
                     <string>P</string>
                    </property>
@@ -2828,7 +2817,7 @@ Z0</string>
                   </widget>
                  </item>
                  <item row="7" column="2">
-                  <widget class="QPushButton" name="pushButton_11">
+                  <widget class="QPushButton" name="mdi_y">
                    <property name="text">
                     <string>Y</string>
                    </property>
@@ -2838,7 +2827,7 @@ Z0</string>
                   </widget>
                  </item>
                  <item row="7" column="3">
-                  <widget class="QPushButton" name="pushButton_8">
+                  <widget class="QPushButton" name="mdi_z">
                    <property name="text">
                     <string>Z</string>
                    </property>
@@ -2848,7 +2837,7 @@ Z0</string>
                   </widget>
                  </item>
                  <item row="8" column="3">
-                  <widget class="QPushButton" name="pushButton_13">
+                  <widget class="QPushButton" name="mdi_s">
                    <property name="text">
                     <string>S</string>
                    </property>
@@ -2858,7 +2847,7 @@ Z0</string>
                   </widget>
                  </item>
                  <item row="9" column="5">
-                  <widget class="QPushButton" name="pushButton_10">
+                  <widget class="QPushButton" name="mdi_j">
                    <property name="text">
                     <string>J</string>
                    </property>
@@ -2868,7 +2857,7 @@ Z0</string>
                   </widget>
                  </item>
                  <item row="9" column="2">
-                  <widget class="QPushButton" name="pushButton_15">
+                  <widget class="QPushButton" name="mdi_8">
                    <property name="text">
                     <string>8</string>
                    </property>
@@ -2888,7 +2877,7 @@ Z0</string>
                   </widget>
                  </item>
                  <item row="7" column="4">
-                  <widget class="QPushButton" name="pushButton">
+                  <widget class="QPushButton" name="mdi_a">
                    <property name="text">
                     <string>A</string>
                    </property>
@@ -2917,31 +2906,8 @@ Z0</string>
                    </attribute>
                   </widget>
                  </item>
-                 <item row="2" column="2">
-                  <widget class="MDIButton" name="SETUPPOS">
-                   <property name="font">
-                    <font>
-                     <family>DejaVu Sans</family>
-                     <pointsize>12</pointsize>
-                     <weight>50</weight>
-                     <italic>false</italic>
-                     <bold>false</bold>
-                    </font>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">font: 12pt &quot;DejaVu Sans&quot;;</string>
-                   </property>
-                   <property name="text">
-                    <string>G90G0
-X0Y0</string>
-                   </property>
-                   <property name="MDICommand" stdset="0">
-                    <string>G90G0X0Y0</string>
-                   </property>
-                  </widget>
-                 </item>
                  <item row="9" column="1">
-                  <widget class="QPushButton" name="pushButton_4">
+                  <widget class="QPushButton" name="mdi_7">
                    <property name="text">
                     <string>7</string>
                    </property>
@@ -2950,22 +2916,8 @@ X0Y0</string>
                    </attribute>
                   </widget>
                  </item>
-                 <item row="2" column="7">
-                  <widget class="StatusLabel" name="statuslabel_20">
-                   <property name="styleSheet">
-                    <string notr="true">color: rgb(255, 255, 255);
-background-color:rgb(52, 101, 164)</string>
-                   </property>
-                   <property name="frameShape">
-                    <enum>QFrame::Box</enum>
-                   </property>
-                   <property name="rules" stdset="0">
-                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:state?text&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;str(ch[0])&quot;, &quot;name&quot;: &quot;state&quot;}]</string>
-                   </property>
-                  </widget>
-                 </item>
                  <item row="8" column="5">
-                  <widget class="QPushButton" name="pushButton_7">
+                  <widget class="QPushButton" name="mdi_i">
                    <property name="text">
                     <string>I</string>
                    </property>
@@ -2995,7 +2947,7 @@ background-color:rgb(52, 101, 164)</string>
                   </widget>
                  </item>
                  <item row="8" column="1">
-                  <widget class="QPushButton" name="pushButton_6">
+                  <widget class="QPushButton" name="mdi_g">
                    <property name="text">
                     <string>G</string>
                    </property>
@@ -3005,7 +2957,7 @@ background-color:rgb(52, 101, 164)</string>
                   </widget>
                  </item>
                  <item row="10" column="3">
-                  <widget class="QPushButton" name="pushButton_30">
+                  <widget class="QPushButton" name="mdi_6">
                    <property name="text">
                     <string>6</string>
                    </property>
@@ -3025,7 +2977,7 @@ background-color:rgb(52, 101, 164)</string>
                   </widget>
                  </item>
                  <item row="11" column="3">
-                  <widget class="QPushButton" name="pushButton_20">
+                  <widget class="QPushButton" name="mdi_3">
                    <property name="text">
                     <string>3</string>
                    </property>
@@ -3035,7 +2987,7 @@ background-color:rgb(52, 101, 164)</string>
                   </widget>
                  </item>
                  <item row="8" column="2">
-                  <widget class="QPushButton" name="pushButton_5">
+                  <widget class="QPushButton" name="mdi_m">
                    <property name="text">
                     <string>M</string>
                    </property>
@@ -3058,7 +3010,7 @@ background-color:rgb(52, 101, 164)</string>
                   </spacer>
                  </item>
                  <item row="7" column="1">
-                  <widget class="QPushButton" name="pushButton_3">
+                  <widget class="QPushButton" name="mdi_x">
                    <property name="text">
                     <string>X</string>
                    </property>
@@ -3085,7 +3037,7 @@ background-color:rgb(52, 101, 164)</string>
                   </widget>
                  </item>
                  <item row="11" column="5">
-                  <widget class="QPushButton" name="pushButton_31">
+                  <widget class="QPushButton" name="mdi_l">
                    <property name="text">
                     <string>L</string>
                    </property>
@@ -3122,6 +3074,64 @@ background-color:rgb(52, 101, 164)</string>
                    <attribute name="buttonGroup">
                     <string notr="true">mdiButtonGroup</string>
                    </attribute>
+                  </widget>
+                 </item>
+                 <item row="11" column="7">
+                  <widget class="QPushButton" name="pushButton">
+                   <property name="text">
+                    <string>G40</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">mdiButtonGroup</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="6" column="1">
+                  <widget class="MDIButton" name="z0">
+                   <property name="text">
+                    <string>G28
+Z0</string>
+                   </property>
+                   <property name="MDICommand" stdset="0">
+                    <string>G91G28Z0</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="2">
+                  <widget class="MDIButton" name="SETUPPOS">
+                   <property name="font">
+                    <font>
+                     <family>DejaVu Sans</family>
+                     <pointsize>12</pointsize>
+                     <weight>50</weight>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">font: 12pt &quot;DejaVu Sans&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>G90G0
+X0Y0</string>
+                   </property>
+                   <property name="MDICommand" stdset="0">
+                    <string>G90G0X0Y0</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="7">
+                  <widget class="StatusLabel" name="statuslabel_20">
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(255, 255, 255);
+background-color:rgb(52, 101, 164)</string>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::Box</enum>
+                   </property>
+                   <property name="rules" stdset="0">
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:state?text&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;str(ch[0])&quot;, &quot;name&quot;: &quot;state&quot;}]</string>
+                   </property>
                   </widget>
                  </item>
                 </layout>
@@ -3279,8 +3289,20 @@ background-color:rgb(52, 101, 164);
                     </item>
                     <item row="1" column="1">
                      <widget class="ActionButton" name="jog_continuous">
+                      <property name="enabled">
+                       <bool>true</bool>
+                      </property>
+                      <property name="text">
+                       <string>JOG</string>
+                      </property>
+                      <property name="checkable">
+                       <bool>false</bool>
+                      </property>
+                      <property name="rules" stdset="0">
+                       <string>[]</string>
+                      </property>
                       <property name="actionName" stdset="0">
-                       <string>machine.jog-mode.continuous</string>
+                       <string>machine.jog-mode.toggle</string>
                       </property>
                      </widget>
                     </item>
@@ -3314,39 +3336,7 @@ background-color:rgb(52, 101, 164);
                     <property name="bottomMargin">
                      <number>5</number>
                     </property>
-                    <item row="1" column="0">
-                     <widget class="QLabel" name="label_37">
-                      <property name="minimumSize">
-                       <size>
-                        <width>0</width>
-                        <height>20</height>
-                       </size>
-                      </property>
-                      <property name="maximumSize">
-                       <size>
-                        <width>16777215</width>
-                        <height>30</height>
-                       </size>
-                      </property>
-                      <property name="styleSheet">
-                       <string notr="true">color: rgb(255, 255, 255);
-background-color:rgb(52, 101, 164);</string>
-                      </property>
-                      <property name="frameShape">
-                       <enum>QFrame::Box</enum>
-                      </property>
-                      <property name="lineWidth">
-                       <number>2</number>
-                      </property>
-                      <property name="text">
-                       <string>JOG INCREMENT</string>
-                      </property>
-                      <property name="alignment">
-                       <set>Qt::AlignCenter</set>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="2" column="0">
+                    <item row="2" column="2">
                      <widget class="JogIncrementWidget" name="jogincrement">
                       <property name="minimumSize">
                        <size>
@@ -3382,6 +3372,38 @@ font: 12pt &quot;DejaVu Sans&quot;;</string>
                       </property>
                       <property name="layoutSpacing">
                        <number>2</number>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1" colspan="2">
+                     <widget class="QLabel" name="label_37">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>30</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(255, 255, 255);
+background-color:rgb(52, 101, 164);</string>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::Box</enum>
+                      </property>
+                      <property name="lineWidth">
+                       <number>2</number>
+                      </property>
+                      <property name="text">
+                       <string>JOG INCREMENT</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
                       </property>
                      </widget>
                     </item>
@@ -3626,13 +3648,13 @@ background-color:rgb(52, 101, 164);
                       <property name="minimumSize">
                        <size>
                         <width>0</width>
-                        <height>45</height>
+                        <height>47</height>
                        </size>
                       </property>
                       <property name="maximumSize">
                        <size>
-                        <width>80</width>
-                        <height>52</height>
+                        <width>16777215</width>
+                        <height>16777215</height>
                        </size>
                       </property>
                       <property name="text">
@@ -3682,7 +3704,7 @@ background-color:rgb(52, 101, 164);</string>
                      <widget class="ActionButton" name="flood_toggle">
                       <property name="maximumSize">
                        <size>
-                        <width>80</width>
+                        <width>16777215</width>
                         <height>50</height>
                        </size>
                       </property>
@@ -3737,13 +3759,13 @@ font: 12pt &quot;DejaVu Sans&quot;;
                       <property name="minimumSize">
                        <size>
                         <width>0</width>
-                        <height>45</height>
+                        <height>47</height>
                        </size>
                       </property>
                       <property name="maximumSize">
                        <size>
                         <width>16777215</width>
-                        <height>52</height>
+                        <height>16777215</height>
                        </size>
                       </property>
                       <property name="text">
@@ -3762,13 +3784,13 @@ font: 12pt &quot;DejaVu Sans&quot;;
                       <property name="minimumSize">
                        <size>
                         <width>0</width>
-                        <height>45</height>
+                        <height>47</height>
                        </size>
                       </property>
                       <property name="maximumSize">
                        <size>
                         <width>16777215</width>
-                        <height>52</height>
+                        <height>16777215</height>
                        </size>
                       </property>
                       <property name="text">
@@ -3787,13 +3809,13 @@ font: 12pt &quot;DejaVu Sans&quot;;
                       <property name="minimumSize">
                        <size>
                         <width>0</width>
-                        <height>45</height>
+                        <height>47</height>
                        </size>
                       </property>
                       <property name="maximumSize">
                        <size>
                         <width>16777215</width>
-                        <height>52</height>
+                        <height>16777215</height>
                        </size>
                       </property>
                       <property name="text">
@@ -4624,7 +4646,7 @@ font: 14pt &quot;DejaVu Sans&quot;; }
              <enum>QTabWidget::Triangular</enum>
             </property>
             <property name="currentIndex">
-             <number>0</number>
+             <number>1</number>
             </property>
             <property name="documentMode">
              <bool>false</bool>
@@ -4844,6 +4866,9 @@ background-color:rgb(52, 101, 164);
                   <widget class="QPushButton" name="savetooltable">
                    <property name="text">
                     <string>SAVE</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>false</bool>
                    </property>
                   </widget>
                  </item>
@@ -7523,7 +7548,7 @@ font: 14pt &quot;DejaVu Sans&quot;;
            <number>18</number>
           </property>
           <item row="0" column="1">
-           <widget class="ActionButton" name="actionbutton_4">
+           <widget class="ActionButton" name="run">
             <property name="text">
              <string>RUN</string>
             </property>
@@ -7552,7 +7577,7 @@ font: 14pt &quot;DejaVu Sans&quot;;
            </widget>
           </item>
           <item row="0" column="0">
-           <widget class="ActionButton" name="actionbutton_8">
+           <widget class="ActionButton" name="abort">
             <property name="text">
              <string>ABORT</string>
             </property>
@@ -7562,7 +7587,7 @@ font: 14pt &quot;DejaVu Sans&quot;;
            </widget>
           </item>
           <item row="0" column="4">
-           <widget class="ActionButton" name="actionbutton_5">
+           <widget class="ActionButton" name="step">
             <property name="text">
              <string>STEP</string>
             </property>
@@ -7572,7 +7597,7 @@ font: 14pt &quot;DejaVu Sans&quot;;
            </widget>
           </item>
           <item row="0" column="2">
-           <widget class="ActionButton" name="actionbutton_6">
+           <widget class="ActionButton" name="pause">
             <property name="text">
              <string>PAUSE</string>
             </property>
@@ -7582,7 +7607,7 @@ font: 14pt &quot;DejaVu Sans&quot;;
            </widget>
           </item>
           <item row="0" column="3">
-           <widget class="ActionButton" name="actionbutton_7">
+           <widget class="ActionButton" name="resume">
             <property name="text">
              <string>RESUME</string>
             </property>
@@ -7669,9 +7694,49 @@ font: 14pt &quot;DejaVu Sans&quot;;
    <header>qtpyvcp.widgets.input_widgets.jog_increment</header>
   </customwidget>
   <customwidget>
+   <class>FileSystemTable</class>
+   <extends>QTableView</extends>
+   <header>qtpyvcp.widgets.input_widgets.file_system</header>
+  </customwidget>
+  <customwidget>
+   <class>MDIEntry</class>
+   <extends>QLineEdit</extends>
+   <header>qtpyvcp.widgets.input_widgets.mdientry_widget</header>
+  </customwidget>
+  <customwidget>
+   <class>ActionSlider</class>
+   <extends>QSlider</extends>
+   <header>qtpyvcp.widgets.input_widgets.action_slider</header>
+  </customwidget>
+  <customwidget>
+   <class>DROWidget</class>
+   <extends>QLabel</extends>
+   <header>qtpyvcp.widgets.display_widgets.dro_widget</header>
+  </customwidget>
+  <customwidget>
+   <class>StatusLabel</class>
+   <extends>QLabel</extends>
+   <header>qtpyvcp.widgets.display_widgets.status_label</header>
+  </customwidget>
+  <customwidget>
+   <class>StatusLED</class>
+   <extends>QWidget</extends>
+   <header>qtpyvcp.widgets.display_widgets.status_led</header>
+  </customwidget>
+  <customwidget>
    <class>RecentFileComboBox</class>
    <extends>QComboBox</extends>
    <header>qtpyvcp.widgets.input_widgets.recent_file_combobox</header>
+  </customwidget>
+  <customwidget>
+   <class>ToolTable</class>
+   <extends>QTableView</extends>
+   <header>qtpyvcp.widgets.input_widgets.tool_table</header>
+  </customwidget>
+  <customwidget>
+   <class>MDIButton</class>
+   <extends>QPushButton</extends>
+   <header>qtpyvcp.widgets.button_widgets.mdi_button</header>
   </customwidget>
   <customwidget>
    <class>GcodeBackplot</class>
@@ -7686,151 +7751,15 @@ font: 14pt &quot;DejaVu Sans&quot;;
    <container>1</container>
   </customwidget>
   <customwidget>
-   <class>FileSystemTable</class>
-   <extends>QTableView</extends>
-   <header>qtpyvcp.widgets.input_widgets.file_system</header>
-  </customwidget>
-  <customwidget>
-   <class>ToolTable</class>
-   <extends>QTableView</extends>
-   <header>qtpyvcp.widgets.input_widgets.tool_table</header>
-  </customwidget>
-  <customwidget>
-   <class>MDIButton</class>
-   <extends>QPushButton</extends>
-   <header>qtpyvcp.widgets.button_widgets.mdi_button</header>
-  </customwidget>
-  <customwidget>
-   <class>MDIEntry</class>
-   <extends>QLineEdit</extends>
-   <header>qtpyvcp.widgets.input_widgets.mdientry_widget</header>
-  </customwidget>
-  <customwidget>
-   <class>ActionSlider</class>
-   <extends>QSlider</extends>
-   <header>qtpyvcp.widgets.input_widgets.action_slider</header>
-  </customwidget>
-  <customwidget>
-   <class>StatusLED</class>
-   <extends>QWidget</extends>
-   <header>qtpyvcp.widgets.display_widgets.status_led</header>
-  </customwidget>
-  <customwidget>
    <class>ActionButton</class>
    <extends>QPushButton</extends>
    <header>qtpyvcp.widgets.button_widgets.action_button</header>
-  </customwidget>
-  <customwidget>
-   <class>DROWidget</class>
-   <extends>QLabel</extends>
-   <header>qtpyvcp.widgets.display_widgets.dro_widget</header>
-  </customwidget>
-  <customwidget>
-   <class>StatusLabel</class>
-   <extends>QLabel</extends>
-   <header>qtpyvcp.widgets.display_widgets.status_label</header>
   </customwidget>
  </customwidgets>
  <resources>
   <include location="../resources/resources.qrc"/>
  </resources>
  <connections>
-  <connection>
-   <sender>navUp</sender>
-   <signal>clicked()</signal>
-   <receiver>filesystemtable</receiver>
-   <slot>selectPrevious()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>423</x>
-     <y>705</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>316</x>
-     <y>178</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>navDown</sender>
-   <signal>clicked()</signal>
-   <receiver>filesystemtable</receiver>
-   <slot>selectNext()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>501</x>
-     <y>705</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>316</x>
-     <y>178</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>navSelect</sender>
-   <signal>clicked()</signal>
-   <receiver>filesystemtable</receiver>
-   <slot>openSelectedItem()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>633</x>
-     <y>705</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>316</x>
-     <y>178</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>navParent</sender>
-   <signal>clicked()</signal>
-   <receiver>filesystemtable</receiver>
-   <slot>viewParentDirectory()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>322</x>
-     <y>705</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>316</x>
-     <y>178</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>mdiEnterButton</sender>
-   <signal>clicked()</signal>
-   <receiver>mdiEntry</receiver>
-   <slot>submit()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>598</x>
-     <y>711</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>346</x>
-     <y>363</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>mdiClearButton</sender>
-   <signal>clicked()</signal>
-   <receiver>mdiEntry</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>538</x>
-     <y>653</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>346</x>
-     <y>363</y>
-    </hint>
-   </hints>
-  </connection>
   <connection>
    <sender>PVIEW</sender>
    <signal>clicked()</signal>
@@ -8024,24 +7953,8 @@ font: 14pt &quot;DejaVu Sans&quot;;
    </hints>
   </connection>
   <connection>
-   <sender>filesystemtable</sender>
-   <signal>doubleClicked(QModelIndex)</signal>
-   <receiver>filesystemtable</receiver>
-   <slot>openSelectedItem()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>316</x>
-     <y>178</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>316</x>
-     <y>178</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
    <sender>tooltable</sender>
-   <signal>clicked(QModelIndex)</signal>
+   <signal>viewportEntered()</signal>
    <receiver>tooltable</receiver>
    <slot>loadToolTable()</slot>
    <hints>
@@ -8248,6 +8161,118 @@ font: 14pt &quot;DejaVu Sans&quot;;
    </hints>
   </connection>
   <connection>
+   <sender>navUp</sender>
+   <signal>clicked()</signal>
+   <receiver>filesystemtable</receiver>
+   <slot>selectPrevious()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>423</x>
+     <y>705</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>316</x>
+     <y>178</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>navDown</sender>
+   <signal>clicked()</signal>
+   <receiver>filesystemtable</receiver>
+   <slot>selectNext()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>501</x>
+     <y>705</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>316</x>
+     <y>178</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>navParent</sender>
+   <signal>clicked()</signal>
+   <receiver>filesystemtable</receiver>
+   <slot>viewParentDirectory()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>322</x>
+     <y>705</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>316</x>
+     <y>178</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>navSelect</sender>
+   <signal>clicked()</signal>
+   <receiver>filesystemtable</receiver>
+   <slot>openSelectedItem()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>633</x>
+     <y>705</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>316</x>
+     <y>178</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>mdiEnterButton</sender>
+   <signal>clicked()</signal>
+   <receiver>mdiEntry</receiver>
+   <slot>submit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>598</x>
+     <y>711</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>346</x>
+     <y>363</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>mdiClearButton</sender>
+   <signal>clicked()</signal>
+   <receiver>mdiEntry</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>538</x>
+     <y>653</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>346</x>
+     <y>363</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>filesystemtable</sender>
+   <signal>doubleClicked(QModelIndex)</signal>
+   <receiver>filesystemtable</receiver>
+   <slot>openSelectedItem()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>178</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>316</x>
+     <y>178</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
    <sender>editfile</sender>
    <signal>clicked()</signal>
    <receiver>filesystemtable</receiver>
@@ -8265,8 +8290,8 @@ font: 14pt &quot;DejaVu Sans&quot;;
   </connection>
  </connections>
  <buttongroups>
-  <buttongroup name="offsetButtonGroup"/>
-  <buttongroup name="mdiButtonGroup"/>
   <buttongroup name="toolOffsetGroup"/>
+  <buttongroup name="mdiButtonGroup"/>
+  <buttongroup name="offsetButtonGroup"/>
  </buttongroups>
 </ui>
